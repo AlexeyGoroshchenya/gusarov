@@ -1,0 +1,546 @@
+.main{
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.cover {
+    width: 100%;
+    
+    background: var(--purple) no-repeat center / cover;
+    padding-top: 3.125rem;
+    position: relative;
+    overflow: hidden;
+    background-clip: border-box;
+}
+
+@media (max-width: 767.98px) {
+    .cover{
+        
+        padding-top: 1rem;
+    } 
+}
+
+
+
+.cover__container {
+    display: flex;
+}
+
+@media (max-width: 991.98px) {
+    .cover__container{
+        flex-direction: column-reverse;
+    } 
+}
+
+.cover__textbox {
+    flex: 1 1 auto;
+    padding-bottom: 150px;
+}
+.cover__features {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.cover__feature {
+    padding: 6.5px 30px;
+    border-radius: 12px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 991.98px) {
+    .cover__features{
+        margin-top: 20px;
+
+    } 
+}
+
+@media (max-width: 767.98px) {
+    .cover__feature:first-child,
+    .cover__feature:nth-child(2){
+        display: none;
+    } 
+    .cover__feature:last-child {
+        position: absolute;
+        width: 100vw;
+        left: -15px;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+.cover__title {
+    color: white;
+    
+}
+
+@media (max-width: 991.98px) {
+    .cover__textbox {
+        position: relative;
+    }
+
+    .cover__title{
+        position: absolute;
+        top: -240px;
+        left: 0;
+        text-align: center;
+        z-index: 5;
+        width: 100%;
+        
+    } 
+}
+
+.cover__reasons {
+    padding-top: 30px;
+    margin-bottom: 3.125em;
+}
+.cover__reason {
+    margin-bottom: 0.9375rem;
+    padding-left: 30px;
+    color: white;
+    position: relative;
+}
+.cover__reason::before {
+    content: url('../img/snowflake-green.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.cover__button {
+    background-color: var(--green);
+    font-weight: 500;
+}
+.cover__Image {
+    flex: 0 0 35%;
+    position: relative;
+    
+}
+
+@media (max-width: 991.98px) {
+    .cover__Image{
+        flex: 0 0 100vw;
+    } 
+}
+
+.cover__Image-background{
+    background-image: url('../img/cover-photo.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .cover__Image-background{
+        background-position: center;
+    } 
+}
+
+
+
+.cover__label{
+position: absolute;
+bottom: 130px;
+right: 0;
+
+padding: 10px 20px;
+border-radius: 12px;
+background-color: var(--blue);
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 2;
+}
+
+@media (max-width: 991.98px) {
+    .cover__label{
+        width: 100%;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+    } 
+}
+
+.cover__label span{
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.cover__label p{
+width: max-content;
+
+}
+
+.cover__orbit{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 30%;
+    left: 0;
+    z-index: 0;
+    
+}
+
+.cover__orbit img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+
+
+@media (max-width: 991.98px) {
+    .cover__orbit img{
+        bottom: -50px;
+        transform: scale(1.1);
+
+    } 
+}
+
+@media (max-width: 767.98px) {
+    .cover__orbit{
+        
+        transform: scale(1);
+    } 
+}
+
+
+
+
+
+
+
+
+.cover::after {
+    content: url('../img/transition-l2r.svg');
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    z-index: 2;
+}
+
+/* *************************************************************************************** */
+
+.whom {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767.98px) {
+    .whom{
+        padding-bottom: 35px;
+    } 
+}
+
+.whom::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #FBFBFB;
+    z-index: 3;
+}
+
+.whom__container {
+}
+.whom__titlebox {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
+}
+
+@media (max-width: 991.98px) {
+    .whom__titlebox{
+        flex-direction: column;
+        gap: 15px;
+    } 
+}
+
+.whom__title {
+    flex: 0 0 47%;
+}
+.whom__text {
+    flex: 0 0 47%;
+    align-self: flex-end;
+}
+.whom__featuresbox {
+    padding-bottom: calc(30px + (40 - 30)*((100vw - 320px)/(1920 - 320)));
+}
+.whom__subtitle {
+    font-size: calc(18px + (20 - 18)*((100vw - 320px)/(1920 - 320)));
+    font-weight: 500;
+}
+.whom__features {
+    display: flex;
+    padding: 50px 30px;
+    justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+    .whom__features{
+        flex-direction: column;
+
+    } 
+}
+
+.whom__features.frame::after{
+transform: rotate(-2deg);
+}
+
+.whom__column {
+    flex: 0 0 47%;
+}
+.whom__feature {
+    padding-bottom: calc(10px + (30 - 10)*((100vw - 320px)/(1920 - 320)));
+    position: relative;
+    padding-left: 30px;
+}
+
+.whom__feature::before {
+    content: url('../img/snowflake-purple.svg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(15%);
+}
+
+.whom__button {
+    margin: 0 auto;
+}
+
+
+/* ******************************** */
+
+.upcoming {
+    padding: 50px 0;
+}
+
+@media (max-width: 767.98px) {
+    .upcoming{
+        padding: 35px 0 0 15px;
+    } 
+}
+
+.upcoming__container {
+}
+.upcoming__subtitle {
+    color: var(--purple);
+    padding-bottom: calc(10px + (20 - 10)*((100vw - 320px)/(1920 - 320)));
+}
+
+.upcoming__title {
+    padding-bottom: calc(20px + (40 - 20)*((100vw - 320px)/(1920 - 320)));
+}
+
+.upcoming__duration{
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .upcoming__duration{
+        display: block;
+        padding-bottom: 30px;
+    } 
+}
+
+.upcoming__disignation {
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 1.125rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .upcoming__disignation{
+        font-size: 1rem;
+    } 
+}
+
+.upcoming__text p{
+    padding-bottom: 1rem;
+}
+@media (max-width: 767.98px) {
+    .upcoming__text p{
+        padding-bottom: 0.5rem;
+    } 
+}
+
+.upcoming__events {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .upcoming__events{
+        flex-direction: column;
+        gap: 30px;
+    } 
+}
+
+.upcoming__event {
+    padding: 40px 30px;
+    flex: 0 0 30%;
+}
+
+@media (max-width: 767.98px) {
+    .upcoming__event-duration {
+        display: none;
+    } 
+}
+
+.upcoming__event::before {
+    content: url('../img/snowflake-blue.svg');
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+}
+.upcoming__event:nth-child(1)::before {
+    left: 20px;
+    top: 25px;
+}
+.upcoming__event:nth-child(2)::before {
+    right: 20px;
+    top: 25px;
+}
+
+.upcoming__event:nth-child(3)::before {
+    right: 20px;
+    bottom: 25px;
+}
+
+@media (max-width: 767.98px) {
+    .upcoming__event::before {
+        left: 20px;
+        top: 25px;
+    }
+}
+
+.upcoming__event.frame::after {
+    transform: rotate(-2deg);
+}
+
+.upcoming__event.frame:nth-child(2):after {
+    transform: rotate(2deg);
+}
+
+.upcoming__flow{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    .upcoming__event {
+        padding: 25px;
+    } 
+    .upcoming__flow{
+        font-size: 18px;
+    }
+}
+
+.upcoming__button {
+    margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+    .upcoming__button{
+        display: none;
+    } 
+}
+
+
+/* ******************************** */
+.how {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--black);
+    color: white;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.how::after {
+    content: url('../img/transition-r2l.svg');
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    z-index: 2;
+}
+
+
+
+.how__container {
+}
+.how__subtitle {
+    color: var(--green);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .how__subtitle {
+        padding-bottom: 10px;
+    } 
+}
+
+.how__title {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767.98px) {
+    .how__title {
+        padding-bottom: 30px;
+    } 
+}
+
+.how__cards {
+    display: flex;
+    justify-content: space-between;
+}
+.how__card {
+    padding: 30px;
+    flex: 0 0 48%;
+}
+
+.how__card.frame:first-child:after {
+transform: rotate(-2deg);
+}
+.how__card.frame:last-child:after {
+    transform: rotate(2deg);
+    }
+
+.card-how {
+}
+.card-how__title {
+}
+.card-how__feature {
+}
+.card-how__link {
+}
+.card-how__subtitle {
+}
+
