@@ -117,7 +117,9 @@ h6 {
 }
 
 /*============================================================================*/
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #FBFBFB;
@@ -128,43 +130,44 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   --purple:#7900FF;
   --green:#A4FF5C;
   --black:#2E2D2F;
   --blue: #548CFF;
+  --grey: #575658;
   --hover-duration: 0.3s;
+  --container: 1150px;
 }
 
 
 
 
 [class *="__container"] {
-  max-width: 1150px;
+  max-width: var(--container);
   padding: 0 15px;
   margin: 0 auto;
 }
 
 @media (max-width: 991.98px) {
-  [class *="__container"] {
-    max-width: 750px;
+  body {
+    --container: 750px;
   }
 }
 
 @media (max-width: 767.98px) {
-  [class *="__container"] {
-    max-width: none;
+  body {
+    --container: 100%;
   }
 }
 
 /*============================================================================*/
 
 .title_big{
-  
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
-
   font-size: calc(36px + (56 - 36)*((100vw - 320px)/(1920 - 320)));
   line-height: calc(46.8px + (72.8 - 46.8)*((100vw - 320px)/(1920 - 320)));
 }
@@ -176,8 +179,12 @@ body {
   text-align: left;
   font-size: calc(28px + (46 - 28)*((100vw - 320px)/(1920 - 320)));
   line-height: calc(36.4px + (59.8 - 36.4)*((100vw - 320px)/(1920 - 320)));
-  
+}
 
+.title_small{
+  font-weight: 500;
+  font-size: calc(18px + (20 - 18)*((100vw - 320px)/(1920 - 320)));;
+  line-height: calc(23.8px + (26 - 23.8)*((100vw - 320px)/(1920 - 320)));
 }
 
 .subtitle {
@@ -215,6 +222,18 @@ body {
     font-weight: 500;
 }
 
+.button_blue{
+  background-color: var(--blue);
+  color: white;
+  font-weight: 500;
+}
+
+.button_green{
+  background-color: var(--green);
+  color: black;
+  font-weight: 500;
+}
+
 .arrow-rotate svg{
   transition-duration: var(--hover-duration);
   stroke: black;
@@ -224,8 +243,136 @@ body {
 
 }
 
+
+
+
+
+.animation:before{
+	content:"";
+	display:block;
+	width:30px;
+	height:30px;
+	background: #548CFF;
+	border-radius:50%;
+	right: 35%;
+    top: -15%;
+	position:absolute;
+	animation: 2s ease-in-out infinite alternate leftToright;
+}
+.animation:after {
+	content:"";
+	display:block;
+	width:20px;
+	height:20px;
+	background: #7900FF;
+	border-radius:50%;
+    top: 50%;
+	right: 0%;
+	position:absolute;
+	animation: 2s ease-in-out infinite alternate topTobottom;
+}
+@keyframes leftToright {
+  from {
+    right: 55%;
+  }
+  to {
+    right: 35%;
+  }
+}
+@keyframes topTobottom {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 75%;
+	right:5%;
+  }
+}
+
 /*============================================================================*/
 
+section .swiper .slider-pagination  {
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  
+  }
+  
+  @media (max-width: 991.98px) {
+      section .slider-pagination {
+          bottom: 15px; 
+      }
+  }
+  
+  .pagination-bullet {
+      cursor: pointer;
+      height: 5px;
+      border-radius: 2px;
+      width: 30px;
+      background-color: #CCCCCC;
+      margin: 0 5px;
+  }
+  .pagination-bullet span{
+      width: 100%;
+      height: 100%;
+  }
+  
+  .pagination-bullet-active {
+      background-color: var(--purple)
+  }
+  
+  .slider-button-prev,
+  .slider-button-next {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid;
+  background-color: var(--green);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  }
+  
+  .slider-button-prev img,
+  .slider-button-next img{
+  transform: translateY(2px);
+  }
+  
+  @media (max-width: 991.98px) {
+      .slider-button-prev,
+  .slider-button-next {
+          top: auto;
+          bottom: 0;
+      }
+  }
+  
+  .slider-button-prev {
+      left: 15px;
+      transform: rotate(90deg);
+  }
+  
+  .slider-button-next {
+      right: 15px;
+      transform: rotate(-90deg);
+  }
 
 
 /*============================================================================*/
+
+.up{
+  position: fixed;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+}

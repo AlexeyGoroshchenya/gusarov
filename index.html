@@ -5,7 +5,7 @@
 	<title>Онлайн-курсы интернет-маркетинга</title>
 
 	<link type="image/x-icon" rel="shortcut icon" href="/static/favicon.png">
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="stylesheet" href="dist/css/style.css">
 	<link rel="stylesheet" href="dist/css/header.css">
 	<link rel="stylesheet" href="dist/css/main.css">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header id="header" class="header">
 		<div class="header__menu-button"><span></span><span></span><span></span></div>
 		<div class="header__logo">
 			<img src="./dist/img/logo.svg" alt="gusarovedu logo">
@@ -134,7 +134,7 @@
 						специалистом, способным растить прибыль бизнесу и работать в любой точке мира.</div>
 				</div>
 				<div class="whom__featuresbox">
-					<div class="whom__subtitle">На курсах вы:</div>
+					<div class="whom__subtitle title_small">На курсах вы:</div>
 					<div class="whom__features frame">
 						<div class="whom__column">
 							<div class="whom__feature">Научитесь на собственном проекте (либо предоставим вам проект)
@@ -162,7 +162,7 @@
 		<section class="upcoming">
 			<div class="upcoming__container">
 				<div class="upcoming__subtitle subtitle">Ближайшие наборы</div>
-				<div class="upcoming__title title">Курс digital-маркетинга онлайн</div>
+				<h2 class="upcoming__title title">Курс digital-маркетинга онлайн</h2>
 
 				<div class="upcoming__duration">
 					<div class="upcoming__disignation">Длительность</div>
@@ -174,7 +174,7 @@
 
 				<div class="upcoming__events">
 					<div class="upcoming__event frame">
-						<div class="upcoming__flow">42 поток</div>
+						<div class="upcoming__flow title_small">42 поток</div>
 						<div class="upcoming__disignation">Когда</div>
 						<div class="upcoming__text">
 							<p>13.07.2022 – 30.11.2022</p>
@@ -191,7 +191,7 @@
 					</div>
 
 					<div class="upcoming__event frame">
-						<div class="upcoming__flow">43 поток</div>
+						<div class="upcoming__flow title_small">43 поток</div>
 						<div class="upcoming__disignation">Когда</div>
 						<div class="upcoming__text">
 							<p>16.08.2022 – 03.01.2023</p>
@@ -208,7 +208,7 @@
 					</div>
 
 					<div class="upcoming__event frame">
-						<div class="upcoming__flow">44 поток</div>
+						<div class="upcoming__flow title_small">44 поток</div>
 						<div class="upcoming__disignation">Когда</div>
 						<div class="upcoming__text">
 							<p>31.08.2022 – 18.01.2023</p>
@@ -228,33 +228,1291 @@
 				<div class="upcoming__button button button_purple">Измените свою жизнь!</div>
 			</div>
 		</section>
-<section class="how">
-	<div class="how__container">
-		<div class="how__subtitle subtitle">Мы сделали невозможное: в помощь студентам пригласили дизайнеров и психолога</div>
-		<div class="how__title title">Чем они помогут?</div>
-		<div class="how__cards">
-			<div class="how__card frame card-how">
-				<div class="card-how__title">Дизайнер</div>
-				<div class="card-how__feature">Сделает креативы под соц. сети</div>
-				<div class="card-how__feature">Поправит дизайн лендинга</div>
-				<div class="card-how__feature">Разработает визитки и логотип</div>
-				<div class="card-how__feature">Создаст рекламные макеты под таргетированную/контекстную рекламы</div>
-				<div class="card-how__link">Смотреть всё</div>
-				<div class="card-how__subtitle subtitle">Поможет справиться со всеми трудностями, которые возникают у маркетологов на пути к увеличению конверсии</div>
+		<section class="how">
+			<div class="how__container">
+				<div class="how__subtitle subtitle">Мы сделали невозможное: в помощь студентам пригласили дизайнеров и
+					психолога</div>
+				<h2 class="how__title title">Чем они помогут?</h2>
+				<div class="how__cards">
+					<div class="how__card frame card-how">
+						<div class="card-how__title title_small">Дизайнер</div>
+						<div class="card-how__feature">Сделает креативы под соц. сети</div>
+						<div class="card-how__feature">Поправит дизайн лендинга</div>
+						<div class="card-how__feature">Разработает визитки и логотип</div>
+						<div class="card-how__feature">Создаст рекламные макеты под таргетированную/контекстную рекламы
+						</div>
+						<div class="card-how__link"><a href="#">Смотреть всё</a></div>
+						<div class="card-how__subtitle subtitle">Поможет справиться со всеми трудностями, которые
+							возникают у маркетологов на пути к увеличению конверсии</div>
+					</div>
+
+					<div class="how__card frame card-how">
+						<div class="card-how__title title_small">Психолог</div>
+						<div class="card-how__feature">Поможет проработать внутренние страхи, связанные
+							с переквалификацией</div>
+						<div class="card-how__feature">Поможет убрать личные сомнения «а вдруг у меня не получится»
+						</div>
+						<div class="card-how__feature">Поможет студентам глубже понять мотивацию, эмоции и поведение
+							потребителей</div>
+
+						<div class="card-how__link"><a href="#">Смотреть всё</a></div>
+						<div class="card-how__subtitle subtitle">Основанные на психологии методы могут быть использованы
+							для создания более убедительных рекламных сообщений и кампаний</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="after">
+			<div class="after__container">
+				<h2 class="after__title title">После окончания курса:</h2>
+				<div class="after__body">
+					<div class="after__column">
+						<div class="after__item">
+							<div class="after__disignation">01. Освоите</div>
+							<div class="after__text">востребованную профессию с нуля. Начинаем с самых азов, разбираем
+								на пальцах</div>
+						</div>
+						<div class="after__item">
+							<div class="after__disignation">02. Поймете</div>
+							<div class="after__text">как находить заказчиков и работу</div>
+						</div>
+						<div class="after__item">
+							<div class="after__disignation">03. Узнаете</div>
+							<div class="after__text">все нюансы работы с рекламными кабинетами. Настроите и запустите
+								8 рекламных кампаний</div>
+						</div>
+					</div>
+					<div class="after__column">
+						<div class="after__item">
+							<div class="after__disignation">04. Научитесь</div>
+							<div class="after__text">создавать креативы без привлечения дизайнера. Освоите инструменты
+								Figma и Сanva</div>
+						</div>
+						<div class="after__item">
+							<div class="after__disignation">05. Напишете</div>
+							<div class="after__text">продающие тексты не хуже Огилви. Мы дадим 30+ формул копирайтинга
+							</div>
+						</div>
+						<div class="after__item">
+							<div class="after__disignation">06. Заработаете</div>
+							<div class="after__text">свои первые деньги. Многие студенты ещё во время обучения находят
+								работу из закрытого чата с нанимателями</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="headliner">
+			<div class="headliner__container">
+				<div class="headliner__subtitle subtitle">
+					О нас
+				</div>
+				<div class="headliner__body">
+					<div class="headliner__textbox">
+						<h2 class="headliner__title title">
+							Давайте познакомимся! <br>
+							Меня зовут Андрей Гусаров
+						</h2>
+						<div class="headliner__text">
+							<p>10,5 лет развиваю агентство по интернет-маркетингу GUSAROV. Делюсь практическими
+								знаниями, основанными на личном опыте. Это не курсы — это мастер-класс, в котором
+								вы не зритель, а часть Команды.
+							</p>
+							<p>Курс построен на потребностях бизнеса и поможет вам эффективно работать в условиях
+								турбулентности.
+							</p>
+							<p>Присоединяйтесь к нам в соцсетях! На нашем канале на YouTube мы постоянно публикуем
+								полезный контент, который отвлекает от происходящих в феврале и марте событий.</p>
+						</div>
+					</div>
+					<div class="headliner__imagebox">
+						<div class="headliner__image-inner animation">
+							<video preload="auto" playsinline="" autoplay="" loop="" muted="">
+								<source src="./dist/img/headliner-video.mp4" type="video/mp4">
+							</video>
+						</div>
+
+					</div>
+				</div>
+				<div class="headliner__socials">
+					<div class="headliner__social ">
+						<img src="./dist/img/icons/telegram-white.svg" alt="">
+						<span>26 899 подписчиков</span>
+					</div>
+					<div class="headliner__social">
+						<img src="./dist/img/icons/instagram-white.svg" alt="">
+						<span>28 095 подписчиков</span>
+					</div>
+					<div class="headliner__social">
+						<img src="./dist/img/icons/tiktok-white.svg" alt="">
+						<span>430 560 подписчиков</span>
+					</div>
+					<div class="headliner__social">
+						<img src="./dist/img/icons/youtube-white.svg" alt="">
+						<span>5 220 подписчиков</span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="teachers">
+			<div class="teachers__container">
+				<div class="teachers__subtitle subtitle">
+					Другие преподаватели
+				</div>
+				<h2 class="teachers__title title">
+					Кто будет вас обучать?
+				</h2>
+				<div class="teachers__slider swiper">
+					<div class="teachers__wrapper swiper-wrapper">
+						<div class="teachers__slide swiper-slide">
+							<div class="teachers__imagebox">
+								<div class="teachers__image">
+									<img src="./dist/img/teachers-1.webp" alt="Юлия Казаровец">
+								</div>
+							</div>
+							<div class="teachers__textbox">
+								<div class="teachers__disignation title_small">Юлия Казаровец</div>
+								<div class="teachers__text">SMM-специалист в EDU GUSAROV
+									Создала 4 автоворонки с общей выручкой 40 000 $
+									Запускает таргетированную рекламу на СНГ, Европу
+									Работает c бюджетами 50 $ в день и выше
+									Оптимизировала цену 1 лида с 2 $ до 0,23 $ в нише инфобизнеса</div>
+							</div>
+
+
+						</div>
+						<div class="teachers__slide swiper-slide">
+							<div class="teachers__imagebox">
+								<div class="teachers__image">
+									<img src="./dist/img/teachers-1.webp" alt="Юлия Казаровец">
+								</div>
+							</div>
+							<div class="teachers__textbox">
+								<div class="teachers__disignation title_small">Юлия Казаровец</div>
+								<div class="teachers__text">SMM-специалист в EDU GUSAROV
+									Создала 4 автоворонки с общей выручкой 40 000 $
+									Запускает таргетированную рекламу на СНГ, Европу
+									Работает c бюджетами 50 $ в день и выше
+									Оптимизировала цену 1 лида с 2 $ до 0,23 $ в нише инфобизнеса</div>
+							</div>
+						</div>
+					</div>
+					<div class="teachers-pagination slider-pagination"></div>
+
+
+					<div class="teachers-button-prev slider-button-prev"><img src="./dist/img/icons/arrow.svg"
+							alt="prev"></div>
+					<div class="teachers-button-next slider-button-next"><img src="./dist/img/icons/arrow.svg"
+							alt="next"></div>
+				</div>
+			</div>
+		</section>
+		<section class="fit">
+			<div class="fit__container">
+				<div class="fit__subtitle subtitle">Будет ли вам полезно?</div>
+				<h2 class="fit__title title">На кого рассчитан курс?</h2>
+				<div class="fit__text">Комплексный курс интернет-маркетинга. Теоретическая и практическая информация
+					для работы в маркетинге, SEO, контекстной рекламе и SMM. Учимся от общего к частному.</div>
+				<div class="fit__fits">
+					<div class="fit__column">
+						<div class="fit__disignation fit__disignation_positive title_small">Курс точно для вас, если:
+						</div>
+						<div class="fit__row">
+							<div class="fit__image"><img src="./dist/img/fit-1.jpg" alt=""></div>
+							<div class="fit__desc">Вы новичок в этой области и хотите сменить профессию, чтобы сделать
+								успешную карьеру в интернете</div>
+						</div>
+						<div class="fit__row">
+							<div class="fit__image"><img src="./dist/img/fit-2.jpg" alt=""></div>
+							<div class="fit__desc">Вы студент или выпускник, который хочет выйти с курсов готовым
+								специалистом</div>
+						</div>
+						<div class="fit__row">
+							<div class="fit__image"><img src="./dist/img/fit-3.jpg" alt=""></div>
+							<div class="fit__desc">Вы руководитель или владелец бизнеса, который хочет обучиться
+								сам или обучить сотрудников</div>
+						</div>
+						<div class="fit__row">
+							<div class="fit__image"><img src="./dist/img/fit-4.jpg" alt=""></div>
+							<div class="fit__desc">Вы маркетолог, который хочет уйти в IT и зарабатывать в долларах
+							</div>
+						</div>
+					</div>
+					<div class="fit__column">
+						<div class="fit__disignation fit__disignation_negative title_small">Курс точно для вас, если:
+						</div>
+						<div class="fit__row">
+							<div class="fit__image"><img src="./dist/img/fit-5.jpg" alt=""></div>
+							<div class="fit__desc">Вы ставите перед собой цель переквалификации, но не видите смысла
+								в нагрузке вне учебного времени</div>
+						</div>
+						<div class="fit__row">
+							<div class="fit__image"><img src="./dist/img/fit-6.jpg" alt=""></div>
+							<div class="fit__desc">Вы считаете, что курса лекций будет достаточно, чтобы освоить и
+								применять знания на практике</div>
+						</div>
+						<div class="fit__row">
+							<div class="fit__image"><img src="./dist/img/fit-7.jpg" alt=""></div>
+							<div class="fit__desc">Вы хотите обучаться на примере своей компании, но не внедряете
+								изменения и не следите за инновациями</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="passing">
+			<div class="passing__container">
+				<div class="passing__subtitle subtitle">Посмотрите и убедитесь сами</div>
+				<h2 class="passing__title title">Как проходит обучение на курсе?</h2>
+				<div class="passing__slider swiper">
+					<div class="passing__wrapper swiper-wrapper">
+						<div class="passing__slide swiper-slide">
+							<div class="passing__image">
+								<video preload="auto" playsinline="" autoplay="" loop="" muted="">
+									<source src="./dist/img/passing-1.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="passing__number">01.</div>
+							<div class="passing__disignation title_small">Изучаете тему модуля</div>
+							<div class="passing__text">
+								<p>50 часов практического обучения с профессиональными преподавателями о самом
+									необходимом для интернет-маркетолога</p>
+								<p>уроки и задания на платформе «Антитренинги»</p>
+							</div>
+						</div>
+						<div class="passing__slide swiper-slide">
+							<div class="passing__image"><video preload="auto" playsinline="" autoplay="" loop=""
+									muted="">
+									<source src="./dist/img/passing-2.mp4" type="video/mp4">
+								</video></div>
+							<div class="passing__number">02.</div>
+							<div class="passing__disignation title_small">Выполняете задания</div>
+							<div class="passing__text">
+								<p>закрепляем на практике всё, что отработали на занятии</p>
+								<p>удобный темп работы и доступ к лекциям в любое время</p>
+							</div>
+						</div>
+						<div class="passing__slide swiper-slide">
+							<div class="passing__image"><video preload="auto" playsinline="" autoplay="" loop=""
+									muted="">
+									<source src="./dist/img/passing-3.mp4" type="video/mp4">
+								</video></div>
+							<div class="passing__number">03.</div>
+							<div class="passing__disignation title_small">Выполняете задания</div>
+							<div class="passing__text">
+								<p>закрепляем на практике всё, что отработали на занятии</p>
+								<p>удобный темп работы и доступ к лекциям в любое время</p>
+							</div>
+						</div>
+					</div>
+					<div class="passing-pagination slider-pagination"></div>
+
+
+					<div class="passing-button-prev slider-button-prev"><img src="./dist/img/icons/arrow.svg"
+							alt="prev"></div>
+					<div class="passing-button-next slider-button-next"><img src="./dist/img/icons/arrow.svg"
+							alt="next"></div>
+				</div>
+			</div>
+		</section>
+		<section class="plan">
+			<div class="plan__container">
+				<div class="plan__description">
+					<div class="plan__textbox">
+						<h2 class="plan__title title">Учебный план курса</h2>
+						<div class="pan__text">
+							86 часов лекций, 68 практических заданий и тесты. 1 раз в неделю мы в прямом эфире разбираем
+							домашние задания. Для наработки уверенности мы сделали стажировку после курса, которая
+							помогает закрепить весь материал.
+						</div>
+					</div>
+					<div class="plan__buttons">
+						<div class="plan__button button button_green">Бесплатное занятие</div>
+						<div class="plan__button button plan__button_download">Скачать программу</div>
+					</div>
+				</div>
+
+				<div class="plan__regions">
+					<div class="plan__region button">
+						Для Беларуси
+					</div>
+					<div class="plan__region button">
+						Для России
+					</div>
+					<div class="plan__region button">
+						Для Европы и США
+					</div>
+				</div>
+				<div class="plan__accordion accordion-plan">
+					<div class="accordion-plan__item">
+						<div class="accordion-plan__title">
+							<p>Интернет-маркетинг (26 часов + 4 бонусом)</p>
+						</div>
+						<div class="accordion-plan__content">
+							<div class="accordion-plan__cards">
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 1. Введение в интернет-маркетинг</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list ">
+												<p>Что такое маркетинг и что им не является</p>
+												<p>Цифры в маркетинге</p>
+												<p>Основные инструменты маркетолога</p>
+												<p>Комплекс маркетинга 5П, 6П</p>
+												<p>Рынок. Основные виды рынка</p>
+												<p>Составляющие рынка: спрос, предложение, прибыль</p>
+												<p>Виды пользователей в интернете</p>
+											</div>
+
+											<div>Уже после первого модуля вы сможете составить КП и определить стратегию
+												работы с потребителем в вашей нише.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 2. Целевая аудитория</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>Что такое целевая аудитория</p>
+												<p>Сегментация и методы сегментации</p>
+												<p>Методы анализа ЦА</p>
+												<p>Кто ваш клиент, какую проблему и как он пытается решить</p>
+												<p>Метод персонажей. Построение карты персонажей</p>
+												<p>Продукт, ценность продукта</p>
+												<p>Составление карты продукта с помощью сервиса Xmind</p>
+
+											</div>
+
+											<div>Научитесь определять свою ЦА, освоите Xmind, составите карту персонажа
+												и карту продукта.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 3. Продукт. CJM. Точки контакта</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>CJM. Точки контакта.</p>
+												<p>Что такое CJM ?</p>
+												<p>Что такое точки контакта?</p>
+												<p>Как строится CJM ?</p>
+												<p>Постановка цели по SMART</p>
+
+
+
+
+
+											</div>
+
+											<div>В этом модуле вы научитесь строить CJM — карту путешествия клиента,
+												установите точки контакта с вашим пользователем и составите цели
+												развития бизнеса, используя SMART-критерии.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-2.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-plan__button button">Показать больше</div>
+						</div>
+					</div>
+					<div class="accordion-plan__item">
+						<div class="accordion-plan__title ">
+							<p>SMM (24 часа)</p>
+						</div>
+						<div class="accordion-plan__content">
+							<div class="accordion-plan__cards">
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 1. Введение в интернет-маркетинг</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>Что такое маркетинг и что им не является</p>
+												<p>Цифры в маркетинге</p>
+												<p>Основные инструменты маркетолога</p>
+												<p>Комплекс маркетинга 5П, 6П</p>
+												<p>Рынок. Основные виды рынка</p>
+												<p>Составляющие рынка: спрос, предложение, прибыль</p>
+												<p>Виды пользователей в интернете</p>
+											</div>
+
+											<div>Уже после первого модуля вы сможете составить КП и определить стратегию
+												работы с потребителем в вашей нише.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 2. Целевая аудитория</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>Что такое целевая аудитория</p>
+												<p>Сегментация и методы сегментации</p>
+												<p>Методы анализа ЦА</p>
+												<p>Кто ваш клиент, какую проблему и как он пытается решить</p>
+												<p>Метод персонажей. Построение карты персонажей</p>
+												<p>Продукт, ценность продукта</p>
+												<p>Составление карты продукта с помощью сервиса Xmind</p>
+
+											</div>
+
+											<div>Научитесь определять свою ЦА, освоите Xmind, составите карту персонажа
+												и карту продукта.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 3. Продукт. CJM. Точки контакта</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>CJM. Точки контакта.</p>
+												<p>Что такое CJM ?</p>
+												<p>Что такое точки контакта?</p>
+												<p>Как строится CJM ?</p>
+												<p>Постановка цели по SMART</p>
+
+
+
+
+
+											</div>
+
+											<div>В этом модуле вы научитесь строить CJM — карту путешествия клиента,
+												установите точки контакта с вашим пользователем и составите цели
+												развития бизнеса, используя SMART-критерии.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-2.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-plan__button button">Показать больше</div>
+						</div>
+					</div>
+					<div class="accordion-plan__item">
+						<div class="accordion-plan__title ">
+							<p>Контекстная реклама (27 часов)</p>
+						</div>
+						<div class="accordion-plan__content">
+							<div class="accordion-plan__cards">
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 1. Введение в интернет-маркетинг</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>Что такое маркетинг и что им не является</p>
+												<p>Цифры в маркетинге</p>
+												<p>Основные инструменты маркетолога</p>
+												<p>Комплекс маркетинга 5П, 6П</p>
+												<p>Рынок. Основные виды рынка</p>
+												<p>Составляющие рынка: спрос, предложение, прибыль</p>
+												<p>Виды пользователей в интернете</p>
+											</div>
+
+											<div>Уже после первого модуля вы сможете составить КП и определить стратегию
+												работы с потребителем в вашей нише.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 2. Целевая аудитория</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>Что такое целевая аудитория</p>
+												<p>Сегментация и методы сегментации</p>
+												<p>Методы анализа ЦА</p>
+												<p>Кто ваш клиент, какую проблему и как он пытается решить</p>
+												<p>Метод персонажей. Построение карты персонажей</p>
+												<p>Продукт, ценность продукта</p>
+												<p>Составление карты продукта с помощью сервиса Xmind</p>
+
+											</div>
+
+											<div>Научитесь определять свою ЦА, освоите Xmind, составите карту персонажа
+												и карту продукта.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 3. Продукт. CJM. Точки контакта</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>CJM. Точки контакта.</p>
+												<p>Что такое CJM ?</p>
+												<p>Что такое точки контакта?</p>
+												<p>Как строится CJM ?</p>
+												<p>Постановка цели по SMART</p>
+
+
+
+
+
+											</div>
+
+											<div>В этом модуле вы научитесь строить CJM — карту путешествия клиента,
+												установите точки контакта с вашим пользователем и составите цели
+												развития бизнеса, используя SMART-критерии.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-2.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-plan__button button">Показать больше</div>
+						</div>
+					</div>
+					<div class="accordion-plan__item">
+						<div class="accordion-plan__title ">
+							<p>Стажировка</p>
+						</div>
+						<div class="accordion-plan__content">
+							<div class="accordion-plan__cards">
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 1. Введение в интернет-маркетинг</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>Что такое маркетинг и что им не является</p>
+												<p>Цифры в маркетинге</p>
+												<p>Основные инструменты маркетолога</p>
+												<p>Комплекс маркетинга 5П, 6П</p>
+												<p>Рынок. Основные виды рынка</p>
+												<p>Составляющие рынка: спрос, предложение, прибыль</p>
+												<p>Виды пользователей в интернете</p>
+											</div>
+
+											<div>Уже после первого модуля вы сможете составить КП и определить стратегию
+												работы с потребителем в вашей нише.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 2. Целевая аудитория</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>Что такое целевая аудитория</p>
+												<p>Сегментация и методы сегментации</p>
+												<p>Методы анализа ЦА</p>
+												<p>Кто ваш клиент, какую проблему и как он пытается решить</p>
+												<p>Метод персонажей. Построение карты персонажей</p>
+												<p>Продукт, ценность продукта</p>
+												<p>Составление карты продукта с помощью сервиса Xmind</p>
+
+											</div>
+
+											<div>Научитесь определять свою ЦА, освоите Xmind, составите карту персонажа
+												и карту продукта.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-1.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+								<div class="accordion-plan__card accordion-card">
+									<div class="accordion-card__title">Модуль 3. Продукт. CJM. Точки контакта</div>
+									<div class="accordion-card__buttons">
+										<div class="accordion-card__button active">
+											Вопросы и темы
+										</div>
+										<div class="accordion-card__button">
+											Термины модуля
+										</div>
+									</div>
+									<div class="accordion-card__textbox">
+										<div class="accordion-card__questions accordion-card__list active">
+											<div class="accordion-card__questions-list">
+												<p>CJM. Точки контакта.</p>
+												<p>Что такое CJM ?</p>
+												<p>Что такое точки контакта?</p>
+												<p>Как строится CJM ?</p>
+												<p>Постановка цели по SMART</p>
+
+
+
+
+
+											</div>
+
+											<div>В этом модуле вы научитесь строить CJM — карту путешествия клиента,
+												установите точки контакта с вашим пользователем и составите цели
+												развития бизнеса, используя SMART-критерии.</div>
+										</div>
+										<div class="accordion-card__termins accordion-card__list"><p>Тут какие-то термины</p></div>
+									</div>
+
+									<div class="accordion-card__gradebox">
+										<div class="accordion-card__grade">
+											Оценка модуля студентами:
+										</div>
+										<div class="accordion-card__image">
+											<img src="./dist/img/score-2.svg" alt="">
+										</div>
+									</div>
+									<div class="accordion-card__link">
+										<a href="#">Показать отзывы</a>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-plan__button button">Показать больше</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
-			<div class="how__card frame card-how">
-				<div class="card-how__title">Психолог</div>
-				<div class="card-how__feature">Поможет проработать внутренние страхи, связанные с переквалификацией</div>
-				<div class="card-how__feature">Поможет убрать личные сомнения «а вдруг у меня не получится»</div>
-				<div class="card-how__feature">Поможет студентам глубже понять мотивацию, эмоции и поведение потребителей</div>
-				
-				<div class="card-how__link">Смотреть всё</div>
-				<div class="card-how__subtitle subtitle">Основанные на психологии методы могут быть использованы для создания более убедительных рекламных сообщений и кампаний</div>
+		</section>
+		<section class="services">
+			<div class="services__container">
+				<div class="services__subtitle subtitle">
+					Что будете учить?
+				</div>
+				<div class="services__title title">
+					Заработаете на знании этих сервисов
+				</div>
+				<div class="services__text">
+					За время обучения на курсе вы освоите ряд самых необходимых интернет-маркетологу сервисов и
+					инструментов, с которыми практикующий специалист работает каждый день. Вот их полный список:
+				</div>
+				<div class="services__cards">
+					<div class="services__card card-services frame card-services_green">
+						<div class="card-services__image"><img src="./dist/img/logotips/xmind.png" alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">XMind</div>
+							<div class="card-services__text">Составление интеллект-карт и работа с диаграммами</div>
+						</div>
+					</div>
+					<div class="services__card card-services frame card-services_blue">
+						<div class="card-services__image"><img src="./dist/img/logotips/miro.png" alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">MIRO</div>
+							<div class="card-services__text">Совместная работа с картами и диаграммами</div>
+						</div>
+					</div>
+					<div class="services__card card-services frame card-services_purple">
+						<div class="card-services__image"><img src="./dist/img/logotips/similarweb.png" alt="miro">
+						</div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">SimilarWeb</div>
+							<div class="card-services__text">Веб-аналитика и глубокий анализ данных</div>
+						</div>
+					</div>
+					<div class="services__card card-services frame card-services_green">
+						<div class="card-services__image"><img src="./dist/img/logotips/serpstat.png" alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">Serpstat</div>
+							<div class="card-services__text">Управление SEO-задачами и полный SEO-анализ веб-сайта</div>
+						</div>
+					</div>
+					<div class="services__card card-services frame card-services_blue">
+						<div class="card-services__image"><img src="./dist/img/logotips/sendpulse.png" alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">SendPulse</div>
+							<div class="card-services__text">Управление SEO-задачами и полный SEO-анализ веб-сайта</div>
+						</div>
+					</div>
+					<div class="services__card card-services frame card-services_purple">
+						<div class="card-services__image"><img src="./dist/img/logotips/figma.png" alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">Figma</div>
+							<div class="card-services__text">Создание детализированных дизайнов для веб-сайтов</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__button button">
+					Показать больше
+				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</section>
+		<section class="students">
+			<div class="students__container">
+				<div class="students__title title">Истории наших студентов</div>
+				<div class="students__subtitle subtitle">Узнайте, как курсы изменили их жизнь</div>
+
+
+
+				<div class="students__slider slider-students swiper">
+					<div class="slider-students__wrapper swiper-wrapper">
+						<div class="slider-students__slide swiper-slide frame">
+							<div class="slider-students__image ">
+								<video preload="none" poster="./dist/img/students-1.jpg" playsinline="" muted=""
+									onclick="this.play()">
+									<source src="./dist/img/passing-1.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="slider-students__name title_small">Яна</div>
+							<div class="slider-students__text">За первый месяц обучения я нашла подработку в качестве
+								контент-менеджера.</div>
+							<div class="slider-students__link">Читать весь отзыв</div>
+
+
+						</div>
+						<div class="slider-students__slide swiper-slide frame">
+							<div class="slider-students__image">
+								<video preload="none" poster="./dist/img/students-2.jpg" playsinline="" muted=""
+									onclick="this.play()">
+									<source src="./dist/img/passing-1.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="slider-students__name title_small">Анна</div>
+							<div class="slider-students__text">Такое количество маркетинговых знаний за 3,5 месяца, я
+								уверена, вы не найдёте нигде.</div>
+							<div class="slider-students__link">Читать весь отзыв</div>
+
+
+						</div>
+						<div class="slider-students__slide swiper-slide frame">
+							<div class="slider-students__image">
+								<video preload="none" poster="./dist/img/students-3.jpg" playsinline="" muted=""
+									onclick="this.play()">
+									<source src="./dist/img/passing-1.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="slider-students__name title_small">Светлана</div>
+							<div class="slider-students__text">Я ещё училась, но я уже начала деньги зарабатывать.</div>
+							<div class="slider-students__link">Читать весь отзыв</div>
+
+
+						</div>
+						<div class="slider-students__slide swiper-slide frame">
+							<div class="slider-students__image">
+								<video preload="none" poster="./dist/img/students-1.jpg" playsinline="" muted=""
+									onclick="this.play()">
+									<source src="./dist/img/passing-1.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="slider-students__name title_small">Яна</div>
+							<div class="slider-students__text">За первый месяц обучения я нашла подработку в качестве
+								контент-менеджера.</div>
+							<div class="slider-students__link">Читать весь отзыв</div>
+
+
+						</div>
+						<div class="slider-students__slide swiper-slide frame">
+							<div class="slider-students__image">
+								<video preload="none" poster="./dist/img/students-2.jpg" playsinline="" muted=""
+									onclick="this.play()">
+									<source src="./dist/img/passing-1.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="slider-students__name title_small">Анна</div>
+							<div class="slider-students__text">Такое количество маркетинговых знаний за 3,5 месяца, я
+								уверена, вы не найдёте нигде.</div>
+							<div class="slider-students__link">Читать весь отзыв</div>
+
+
+						</div>
+						<div class="slider-students__slide swiper-slide frame">
+							<div class="slider-students__image">
+								<video preload="none" poster="./dist/img/students-3.jpg" playsinline="" muted=""
+									onclick="this.play()">
+									<source src="./dist/img/passing-1.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="slider-students__name title_small">Светлана</div>
+							<div class="slider-students__text">Я ещё училась, но я уже начала деньги зарабатывать.</div>
+							<div class="slider-students__link">Читать весь отзыв</div>
+
+
+						</div>
+
+					</div>
+					<div class="slider-students-pagination slider-pagination"></div>
+
+
+					<div class="slider-students-button-prev slider-button-prev"><img src="./dist/img/icons/arrow.svg"
+							alt="prev"></div>
+					<div class="slider-students-button-next slider-button-next"><img src="./dist/img/icons/arrow.svg"
+							alt="next"></div>
+				</div>
+
+				<div class="students__vacancies vacancies-students">
+					<div class="vacancies-students__title title_small">
+						Убедитесь в актуальности профессии сами! Смотрите вакансии
+					</div>
+					<div class="vacancies-students__image">
+						<img src="./dist/img/vacancy-1.jpg" alt="">
+					</div>
+					<div class="vacancies-students__image">
+						<img src="./dist/img/vacancy-2.jpg" alt="">
+					</div>
+
+				</div>
+
+				<div class="students__cards cards-students">
+					<div class="cards-students__slider swiper">
+						<div class="cards-students__wrapper swiper-wrapper">
+							<div class="cards-students__slide swiper-slide frame">
+								<div class="cards-students__card">
+									<div class="cards-students__title title_small"><span>Интернет-маркетолог на
+											фрилансе</span><img src="./dist/img/students-cards-1.png" alt=""></div>
+									<div class="cards-students__fee">Зарплата от: <span>300$</span></div>
+									<div class="cards-students__skills">Профессиональные навыки:</div>
+									<div class="cards-students__text">
+										<p>Создаю аудитории с подсегментами и портретами клиентов</p>
+										<p>Создаю точки контакта, делаю их продающими, проверяю конверсию</p>
+										<p>Разработаю контент-стратегию для emaill рассылок, с учётом стратегии</p>
+									</div>
+									<div class="cards-students__link"><a href="#">Смотреть всё</a></div>
+								</div>
+
+
+							</div>
+							<div class="cards-students__slide swiper-slide frame">
+								<div class="cards-students__card">
+									<div class="cards-students__title title_small"><span>Интернет-маркетолог</span><img
+											src="./dist/img/students-cards-2.png" alt=""></div>
+									<div class="cards-students__fee">Зарплата от: <span>600$</span></div>
+									<div class="cards-students__skills">Профессиональные навыки:</div>
+									<div class="cards-students__text">
+										<p>Создаю аудитории с подсегментами и портретами клиентов</p>
+										<p>Создаю точки контакта, делаю их продающими, проверяю конверсию</p>
+										<p>Разработаю контент-стратегию для emaill рассылок, с учётом стратегии</p>
+									</div>
+									<div class="cards-students__link"><a href="#">Смотреть всё</a></div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="students__works works-students">
+					<div class="works-students__title title">где работают наши студенты?</div>
+					<div class="works-students__text">
+						Представители этих компаний знают про качество нашего обучения. И поэтому с удовольствием
+						возьмут к себе наших студентов на стажировку и трудоустройство!
+					</div>
+					<div class="works-students__slider swiper">
+						<div class="works-students__wrapper swiper-wrapper">
+							<div class="works-students__slide swiper-slide">
+								<img src="./dist/img/logotips/partners-1.png" alt="">
+							</div>
+							<div class="works-students__slide swiper-slide ">
+								<img src="./dist/img/logotips/partners-2.png" alt="">
+							</div>
+							<div class="works-students__slide swiper-slide ">
+								<img src="./dist/img/logotips/partners-3.png" alt="">
+							</div>
+							<div class="works-students__slide swiper-slide ">
+								<img src="./dist/img/logotips/partners-4.png" alt="">
+							</div>
+							<div class="works-students__slide swiper-slide ">
+								<img src="./dist/img/logotips/partners-5.png" alt="">
+							</div>
+						</div>
+						<div class="works-students-pagination slider-pagination"></div>
+
+
+						<div class="works-students-button-prev slider-button-prev"><img src="./dist/img/icons/arrow.svg"
+								alt="prev"></div>
+						<div class="works-students-button-next slider-button-next"><img src="./dist/img/icons/arrow.svg"
+								alt="next"></div>
+					</div>
+
+				</div>
+				<div class="students__quiz">
+					<a class="students__quiz-link" href="#"></a>
+				</div>
+
+			</div>
+		</section>
+		<section class="prices">
+			<div class="prices__container">
+				<div class="prices__subtitle subtitle">Цены пакетов</div>
+				<h2 class="prices__title title">Тарифы и стоимость курсов</h2>
+				<div class="prices__text">Вас ждут онлайн-лекции и задания, выполнение которых можно приравнять к году
+					работы</div>
+				<div class="prices__cards swiper">
+					<div class="prices__wrapper swiper-wrapper">
+						<div class="prices__card card-prices swiper-slide">
+							<div class="card-prices__name title_small"><span>Гусаров STANDART</span></div>
+							<div class="card-prices__price">1050 BYN / 324 $ / 31298 ₽</div>
+							<div class="card-prices__desc">
+								<p>75 видеоуроков</p>
+								<p>49 презентаций</p>
+								<p>15 онлайн-встреч с преподавателями</p>
+								<p>Домашние задания с проверкой и разбором от преподавателей</p>
+								<p>Дополнительные материалы (чек-листы, скринкасты, шаблоны)</p>
+								<p>Разные форматы обучения (тесты, вебинары, воркшопы)</p>
+								<p>Доступ к закрытому чату с нанимателями</p>
+								<p>Защита дипломной работы</p>
+								<p>Сертификат</p>
+								<p>Международный сертификат</p>
+								<p>100% гарантия возврата денег в течение 7 дней после начала обучения</p>
+								<p>3 индивидуальных онлайн-сессии с преподавателями</p>
+								<p>Консультация Андрея Гусарова 24/7</p>
+								<p>12 бонусных уроков, включая карьерное консультирование</p>
+								<p>Рекомендательное письмо и видеорекомендации от Андрея Гусарова</p>
+								<p>Помощь при составлении резюме от Андрея Гусарова</p>
+								<p>Модуль по LinkedIn</p>
+								<p>Курс «Как продавать на Wildberries»</p>
+
+							</div>
+							<div class="card-prices__more">Показать еще</div>
+							<div class="card-prices__button button button_green">Забронировать</div>
+							<div class="card-prices__subtitle subtitle">Доступно в рассрочку!</div>
+						</div>
+						<div class="prices__card card-prices  swiper-slide">
+							<div class="card-prices__name title_small card-prices__name_blue"><span>Гусаров
+									PREMIUM</span></div>
+							<div class="card-prices__price">1440 BYN / 445 $ / 42923 ₽</div>
+							<div class="card-prices__desc">
+								<p>75 видеоуроков</p>
+								<p>49 презентаций</p>
+								<p>15 онлайн-встреч с преподавателями</p>
+								<p>Домашние задания с проверкой и разбором от преподавателей</p>
+								<p>Дополнительные материалы (чек-листы, скринкасты, шаблоны)</p>
+								<p>Разные форматы обучения (тесты, вебинары, воркшопы)</p>
+								<p>Доступ к закрытому чату с нанимателями</p>
+								<p>Защита дипломной работы</p>
+								<p>Сертификат</p>
+								<p>Международный сертификат</p>
+								<p>100% гарантия возврата денег в течение 7 дней после начала обучения</p>
+								<p>3 индивидуальных онлайн-сессии с преподавателями</p>
+								<p>Консультация Андрея Гусарова 24/7</p>
+								<p>12 бонусных уроков, включая карьерное консультирование</p>
+								<p>Рекомендательное письмо и видеорекомендации от Андрея Гусарова</p>
+								<p>Помощь при составлении резюме от Андрея Гусарова</p>
+								<p>Модуль по LinkedIn</p>
+								<p>Курс «Как продавать на Wildberries»</p>
+
+							</div>
+							<div class="card-prices__more">Показать еще</div>
+							<div class="card-prices__button button button_blue">Забронировать</div>
+							<div class="card-prices__subtitle subtitle">Доступно в рассрочку!</div>
+						</div>
+						<div class="prices__card card-prices  swiper-slide">
+							<div class="card-prices__name title_small card-prices__name_purple"><span>Гусаров VIP</span>
+							</div>
+							<div class="card-prices__price">1860 BYN / 575 $ / 55441 ₽</div>
+							<div class="card-prices__desc">
+								<p>75 видеоуроков</p>
+								<p>49 презентаций</p>
+								<p>15 онлайн-встреч с преподавателями</p>
+								<p>Домашние задания с проверкой и разбором от преподавателей</p>
+								<p>Дополнительные материалы (чек-листы, скринкасты, шаблоны)</p>
+								<p>Разные форматы обучения (тесты, вебинары, воркшопы)</p>
+								<p>Доступ к закрытому чату с нанимателями</p>
+								<p>Защита дипломной работы</p>
+								<p>Сертификат</p>
+								<p>Международный сертификат</p>
+								<p>100% гарантия возврата денег в течение 7 дней после начала обучения</p>
+								<p>3 индивидуальных онлайн-сессии с преподавателями</p>
+								<p>Консультация Андрея Гусарова 24/7</p>
+								<p>12 бонусных уроков, включая карьерное консультирование</p>
+								<p>Рекомендательное письмо и видеорекомендации от Андрея Гусарова</p>
+								<p>Помощь при составлении резюме от Андрея Гусарова</p>
+								<p>Модуль по LinkedIn</p>
+								<p>Курс «Как продавать на Wildberries»</p>
+
+							</div>
+							<div class="card-prices__more">Показать еще</div>
+							<div class="card-prices__button button button_purple">Забронировать</div>
+							<div class="card-prices__subtitle subtitle">Доступно в рассрочку!</div>
+						</div>
+						<div class="prices__card card-prices  swiper-slide">
+							<div class="card-prices__name title_small"><span>Гусаров ULTRA</span></div>
+							<div class="card-prices__price">2370 BYN / 733 $ / 70643 ₽</div>
+							<div class="card-prices__desc">
+								<p>75 видеоуроков</p>
+								<p>49 презентаций</p>
+								<p>15 онлайн-встреч с преподавателями</p>
+								<p>Домашние задания с проверкой и разбором от преподавателей</p>
+								<p>Дополнительные материалы (чек-листы, скринкасты, шаблоны)</p>
+								<p>Разные форматы обучения (тесты, вебинары, воркшопы)</p>
+								<p>Доступ к закрытому чату с нанимателями</p>
+								<p>Защита дипломной работы</p>
+								<p>Сертификат</p>
+								<p>Международный сертификат</p>
+								<p>100% гарантия возврата денег в течение 7 дней после начала обучения</p>
+								<p>3 индивидуальных онлайн-сессии с преподавателями</p>
+								<p>Консультация Андрея Гусарова 24/7</p>
+								<p>12 бонусных уроков, включая карьерное консультирование</p>
+								<p>Рекомендательное письмо и видеорекомендации от Андрея Гусарова</p>
+								<p>Помощь при составлении резюме от Андрея Гусарова</p>
+								<p>Модуль по LinkedIn</p>
+								<p>Курс «Как продавать на Wildberries»</p>
+
+							</div>
+							<div class="card-prices__more">Показать еще</div>
+							<div class="card-prices__button button button_green">Забронировать</div>
+							<div class="card-prices__subtitle subtitle">Доступно в рассрочку!</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="prices__comparison comparison-prices">
+					<div class="comparison-prices__title title">Стоимость обучения</div>
+					<div class="comparison-prices__subtitle subtitle">меньше, чем одна зарплата маркетолога!</div>
+					<div class="comparison-prices__rewards">
+						<span class="subtitle">Интернет-маркетолог</span>
+						<p>650-1000 $</p>
+						<p>1000-1300 $</p>
+						<p>1300-2400 $</p>
+					</div>
+					<div class="comparison-prices__comparison frame">
+						Средняя зарплата интернет-маркетолога в Минске — от 590 до 1 600 $. Стоимость нашего курса —
+						от 324 $
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="methodology">
+			<div class="methodology__container">
+				<div class="methodology__subtitle subtitle">Первый клиент — самый важный</div>
+				<div class="methodology__titlebox">
+					<div class="methodology__title title">Наша уникальная авторская методика поиска клиента</div>
+					<div class="methodology__image"><img src="./dist/img/methodology-1.svg" alt=""></div>
+				</div>
+				<div class="methodology__text">200+ студентов нашли с её помощью клиентов для обучения и продолжают с ними работать и после</div>
+				<div class="methodology__textbox">
+					<div class="methodology__image"><img src="./dist/img/methodology-2.svg" alt=""></div>
+					<div class="methodology__card">
+						<div class="methodology__disignation title_small">Что вы узнаете?</div>
+						<div class="methodology__list frame">
+							<div class="methodology__item">На чем можно тренироваться во время обучения</div>
+							<div class="methodology__item">От чего зависит выбор «на ком тренироваться»</div>
+							<div class="methodology__item">Для чего нужен первый клиент</div>
+							<div class="methodology__item">Где искать первого клиента (и для обучения, и после него)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 	</main>
@@ -290,6 +1548,7 @@
 
 
 	</footer>
+	<div class="up"><a href="#header"><img src="./dist/img/up.svg" alt=""></a></div>
 
 </body>
 
