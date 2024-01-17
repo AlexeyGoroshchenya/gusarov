@@ -3,14 +3,14 @@ export const accordion = () => {
 
     document.addEventListener('click', (e) => {
 
-        if (e.target.closest('.accordion-plan__title')) {
-            if (e.target.closest('.accordion-plan__item').classList.contains('active')) {
-                e.target.closest('.accordion-plan__item').classList.remove('active')
+        if (e.target.closest('.accordion-title')) {
+            if (e.target.closest('.accordion-item').classList.contains('active')) {
+                e.target.closest('.accordion-item').classList.remove('active')
             } else {
-                if (document.querySelector('.accordion-plan__item.active')) {
-                    document.querySelector('.accordion-plan__item.active').classList.remove('active')
+                if (document.querySelector('.accordion-item.active')) {
+                    document.querySelector('.accordion-item.active').classList.remove('active')
                 }
-                e.target.closest('.accordion-plan__item').classList.add('active')
+                e.target.closest('.accordion-item').classList.add('active')
             }
 
         }

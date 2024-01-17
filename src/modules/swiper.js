@@ -195,5 +195,115 @@ export const swiper = () => {
 
     );
 
+    const certificates = new Swiper('.slider-certificates__body', {
+        slidesPerView: 1.2,
+        spaceBetween: 40,
+        
+        loop:true,
+        
+        modules: [Navigation, Pagination],
+       
+        navigation: {
+            nextEl: '.slider-certificates-button-next',
+            prevEl: '.slider-certificates-button-prev',
+        },
+        pagination: {
+            el: '.slider-certificates-pagination',
+            clickable: true,
+            bulletActiveClass: 'pagination-bullet-active',
+            bulletClass: 'pagination-bullet',
+          },
+        breakpoints: {
+
+            480: {
+                slidesPerView: 2.2,
+            },
+            991.98: {
+                slidesPerView: 3,
+            },
+        }
+
+    }
+
+    );
+
+    const experts = new Swiper('.slider-experts', {
+        slidesPerView: 1,
+        spaceBetween: 80,
+        
+        loop:true,
+        
+        modules: [Navigation, Pagination],
+       
+        navigation: {
+            nextEl: '.slider-experts-button-next',
+            prevEl: '.slider-experts-button-prev',
+        },
+        pagination: {
+            el: '.slider-experts-pagination',
+            clickable: true,
+            bulletActiveClass: 'pagination-bullet-active',
+            bulletClass: 'pagination-bullet',
+          },
+
+
+    }
+
+    );
+
+
+    const reviews = new Swiper('.slider-reviews', {
+        slidesPerView: 1,
+        spaceBetween: 80,
+        
+        loop:true,
+        
+        modules: [Navigation, Pagination],
+       
+        navigation: {
+            nextEl: '.slider-reviews-button-next',
+            prevEl: '.slider-reviews-button-prev',
+        },
+        pagination: {
+            el: '.slider-reviews-pagination',
+            clickable: true,
+            bulletActiveClass: 'pagination-bullet-active',
+            bulletClass: 'pagination-bullet',
+          },
+          breakpoints: {
+
+            767.98: {
+                slidesPerView: 2,
+            },
+            991.98: {
+                slidesPerView: 3,
+            },
+        }
+
+    }
+
+    );
+
+    const reviews_video = new Swiper('.slider-reviews_video', {
+        slidesPerView: 1,
+        spaceBetween: 150,
+        centeredSlides: true,
+        loop:true,
+        
+        modules: [Navigation, Pagination],
+       
+        navigation: {
+            nextEl: '.slider-reviews_video-button-next',
+            prevEl: '.slider-reviews_video-button-prev',
+        },
+        pagination: {
+            el: '.slider-reviews_video-pagination',
+            clickable: true,
+            bulletActiveClass: 'pagination-bullet-active',
+            bulletClass: 'pagination-bullet',
+          },
+
+
+    })
 
 }

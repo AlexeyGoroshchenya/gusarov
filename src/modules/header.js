@@ -20,7 +20,7 @@ export const header = () => {
         btn.classList.remove('active')
     }
 
-    header.addEventListener('click', (e) => {
+    document.addEventListener('click', (e) => {
         if (e.target.closest('.contacts-header__button')) {
             if (contactsHeaderList.classList.contains('hidden')) {
                 closeMenu(headerMenuButton, headerNav)
@@ -66,6 +66,15 @@ export const header = () => {
                 closeMenu(aboutHeaderToogle, aboutHeaderList)
                 closeMenu(coursesHeaderToogle, coursesHeaderList)
             }
+        }
+
+        if(e.target.closest('.contacts-header__application')){
+            document.querySelector('.modal').classList.add('active')
+            closeMenu(contactsHeaderButton, contactsHeaderList)
+        }
+
+        if(e.target.closest('.modal') && !e.target.closest('.modal__body')){
+            document.querySelector('.modal').classList.remove('active')
         }
 
     })
