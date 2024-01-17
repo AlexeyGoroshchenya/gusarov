@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Gilroy"),
-       url("/dist/fonts/Gilroy-Regular.woff") format("woff");
+       url("../fonts/Gilroy-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: medium;
   font-weight: 500;
   src: local("Gilroy"),
-       url("/dist/fonts/Gilroy-Medium.woff") format("woff");
+       url("../fonts/Gilroy-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-style: bold;
   font-weight: 700;
   src: local("Gilroy"),
-       url("/dist/fonts/Gilroy-Bold.woff") format("woff");
+       url("../fonts/Gilroy-Bold.woff") format("woff");
 }
 
 
@@ -290,6 +290,11 @@ bottom: -2px;
   border-radius: 12px;
   width: fit-content;
   cursor: pointer;
+  transition-duration: var(--hover-duration);
+}
+
+.button:hover{
+  transform: scale(1.05);
 }
 
 .button_purple{
