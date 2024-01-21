@@ -1,0 +1,298 @@
+.plan {
+
+    background-color: var(--black);
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+
+
+.plan__container {
+    overflow: hidden;
+}
+
+.plan__description {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3.125rem;
+}
+
+@media (max-width: 767.98px) {
+    .plan__description {
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 1.875rem;
+    }
+}
+
+.plan__textbox {
+    flex: 0 0 49%;
+
+}
+
+.plan__title {
+    padding-bottom: 1.25rem;
+}
+
+@media (max-width: 767.98px) {
+    .plan__title {
+        padding-bottom: 1rem;
+    }
+}
+
+.pan__text {}
+
+.plan__buttons {
+    flex: 0 0 49%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 767.98px) {
+    .plan__buttons {
+        width: 60%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 560px) {
+    .plan__buttons {
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+.plan__button {}
+
+.plan__button_download {
+    background-color: white;
+    color: black;
+    background-image: url('../img/icons/download.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 40px;
+}
+
+@media (max-width: 767.98px) {
+    .plan__button_download {
+
+        align-self: flex-end;
+    }
+}
+
+.plan__regions {
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 2.5rem;
+}
+
+.plan__region {
+    border: 2px solid;
+}
+
+.plan__region.active {
+    color: var(--white);
+    background-color: var(--purple);
+    border: 2px solid var(--purple);
+}
+
+.plan__accordion {}
+
+.accordion-plan {}
+
+.accordion-plan__item {}
+
+.accordion-plan__title {
+    padding: 10px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: 2px solid;
+    transition-duration: var(--hover-duration);
+    -webkit-transition-duration: var(--hover-duration);
+    -moz-transition-duration: var(--hover-duration);
+    -o-transition-duration: var(--hover-duration);
+}
+
+.active .accordion-plan__title {
+    border: 2px solid var(--black);
+    background-color: #FBFBFB;
+    color: var(--grey);
+}
+
+.accordion-plan__title p {
+    padding-left: 40px;
+    position: relative;
+    display: block;
+}
+
+.accordion-plan__title p::before {
+    content: '';
+    background: url('../img/snowflake-purple.svg') 0 0 /100% no-repeat;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 0;
+    top: 0;
+}
+
+.accordion-plan__title p::after {
+    content: '';
+    background: url('../img/icons/arrow-white.svg') 0 0 /100% no-repeat;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.active .accordion-plan__title p::after {
+    transform: rotate(180deg) translateY(50%);
+    background: url('../img/icons/arrow.svg') 0 0 /100% no-repeat;
+}
+
+
+.accordion-plan__cards {
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+
+    .accordion-plan__cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.accordion-plan__card {
+    flex: 0 0 32%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #FBFBFB;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-card {}
+
+.accordion-card__title {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    padding-bottom: 1.25rem;
+}
+
+.accordion-card__buttons {
+    display: flex;
+    padding-bottom: 1.25rem;
+    gap: 35px;
+}
+
+.accordion-card__button {
+    cursor: pointer;
+}
+
+.accordion-card__button.active {
+    color: var(--purple);
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+}
+
+.accordion-card__textbox {
+    flex: 1 1 auto;
+}
+
+.accordion-card__list {
+    font-size: 14px;
+    padding-bottom: 1.25rem;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition-duration: var(--hover-duration);
+    -webkit-transition-duration: var(--hover-duration);
+    -moz-transition-duration: var(--hover-duration);
+    -o-transition-duration: var(--hover-duration);
+}
+
+.accordion-card__list.active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+.accordion-card__list p {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.accordion-card__list p::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
+.accordion-card__list {
+    padding-bottom: 1.25rem;
+}
+
+
+
+.accordion-card__termins {}
+
+.accordion-card__gradebox {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.accordion-card__grade {
+    font-weight: 500;
+    color: black;
+}
+
+.accordion-card__image {}
+
+.accordion-card__link {
+    color: var(--purple);
+    text-align: right;
+    cursor: pointer;
+
+}
+
+.accordion-card__link a {
+    padding-bottom: 2px;
+    border-bottom: 0.5px solid;
+
+    font-weight: 500;
+}
+
+.accordion-plan__button {
+    color: var(--green);
+    border: 2px solid;
+    margin: 0 auto 30px auto;
+}

@@ -1,4 +1,34 @@
+import Swiper, { Navigation, Pagination } from 'swiper';
+
 export const prices = () => {
+
+    const prices = new Swiper('.prices__cards', {
+        slidesPerView: 1.2,
+        spaceBetween: 40,
+        
+        modules: [Navigation, Pagination],
+       
+        navigation: {
+            nextEl: '.prices__cards-button-next',
+            prevEl: '.prices__cards-button-prev',
+        },
+        pagination: {
+            el: '.prices__cards-pagination',
+            clickable: true,
+            bulletActiveClass: 'pagination-bullet-active',
+            bulletClass: 'pagination-bullet',
+          },
+        breakpoints: {
+
+            767.98: {
+                slidesPerView: 2.2,
+            },
+            991.98: {
+                slidesPerView: 4,
+            },
+        }
+
+    });
 
     const cards = document.querySelector('.prices__cards')
 

@@ -62,77 +62,13 @@ export const swiper = () => {
     }
     );
 
-    const students = new Swiper('.slider-students', {
-        slidesPerView: 1,
-        spaceBetween: 70,
-        loop: true,
-        modules: [Autoplay, Navigation, Pagination],
-        autoplay: {
-            delay: 50000,
-            disableOnInteraction: true,
-            stopOnLastSlide: false,
-        },
 
-        navigation: {
-            nextEl: '.slider-students-button-next',
-            prevEl: '.slider-students-button-prev',
-        },
-        pagination: {
-            el: '.slider-students-pagination',
-            clickable: true,
-            bulletActiveClass: 'pagination-bullet-active',
-            bulletClass: 'pagination-bullet',
-          },
-        breakpoints: {
 
-            767.98: {
-                slidesPerView: 2,
-            },
-            991.98: {
-                slidesPerView: 3,
-            },
-        }
-
-    }
-    )
-
-    const studentsCards = new Swiper('.cards-students__slider', {
-        slidesPerView: 1,
-        spaceBetween: 70,
-        loop: true,
-        modules: [Autoplay, Navigation, Pagination],
-        autoplay: {
-            delay: 50000,
-            disableOnInteraction: true,
-            stopOnLastSlide: false,
-        },
-
-        navigation: {
-            nextEl: '.cards-students-button-next',
-            prevEl: '.cards-students-button-prev',
-        },
-        pagination: {
-            el: '.cards-students-pagination',
-            clickable: true,
-            bulletActiveClass: 'pagination-bullet-active',
-            bulletClass: 'pagination-bullet',
-          },
-        breakpoints: {
-
-            767.98: {
-                slidesPerView: 2,
-            },
-            // 991.98: {
-            //     slidesPerView: 3,
-            // },
-        }
-
-    }
-    )
+    
 
     const studentsWorks = new Swiper('.works-students__slider', {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 10,
         loop: true,
         modules: [Autoplay, Navigation, Pagination],
         autoplay: {
@@ -155,9 +91,11 @@ export const swiper = () => {
 
             767.98: {
                 slidesPerView: 3,
+                spaceBetween: 25,
             },
             991.98: {
                 slidesPerView: 5,
+                spaceBetween: 40,
             },
         }
 
@@ -165,35 +103,7 @@ export const swiper = () => {
 
     );
 
-    const prices = new Swiper('.prices__cards', {
-        slidesPerView: 1.2,
-        spaceBetween: 40,
-        
-        modules: [Navigation, Pagination],
-       
-        navigation: {
-            nextEl: '.prices__cards-button-next',
-            prevEl: '.prices__cards-button-prev',
-        },
-        pagination: {
-            el: '.prices__cards-pagination',
-            clickable: true,
-            bulletActiveClass: 'pagination-bullet-active',
-            bulletClass: 'pagination-bullet',
-          },
-        breakpoints: {
 
-            767.98: {
-                slidesPerView: 2.2,
-            },
-            991.98: {
-                slidesPerView: 4,
-            },
-        }
-
-    }
-
-    );
 
     const certificates = new Swiper('.slider-certificates__body', {
         slidesPerView: 1.2,
@@ -223,9 +133,7 @@ export const swiper = () => {
             },
         }
 
-    }
-
-    );
+    });
 
     const experts = new Swiper('.slider-experts', {
         slidesPerView: 1,
@@ -247,25 +155,51 @@ export const swiper = () => {
           },
 
 
-    }
+    });
 
-    );
-
-
-    const reviews = new Swiper('.slider-reviews', {
+    const confidence = new Swiper('.slider-confidence', {
         slidesPerView: 1,
-        spaceBetween: 80,
+        spaceBetween: 30,
         
         loop:true,
         
         modules: [Navigation, Pagination],
        
         navigation: {
-            nextEl: '.slider-reviews-button-next',
-            prevEl: '.slider-reviews-button-prev',
+            nextEl: '.slider-confidence-button-next',
+            prevEl: '.slider-confidence-button-prev',
         },
         pagination: {
-            el: '.slider-reviews-pagination',
+            el: '.slider-confidence-pagination',
+            clickable: true,
+            bulletActiveClass: 'pagination-bullet-active',
+            bulletClass: 'pagination-bullet',
+          },
+          breakpoints: {
+
+
+            991.98: {
+                slidesPerView: 2,
+            },
+        }
+
+    });
+
+
+    const sliderCases = new Swiper('.slider-cases__body', {
+        slidesPerView: 1.2,
+        spaceBetween: 70,
+        loop:true,
+
+       
+        modules: [Navigation, Pagination],
+       
+        navigation: {
+            nextEl: '.slider-cases-button-next',
+            prevEl: '.slider-cases-button-prev',
+        },
+        pagination: {
+            el: '.slider-cases-pagination',
             clickable: true,
             bulletActiveClass: 'pagination-bullet-active',
             bulletClass: 'pagination-bullet',
@@ -273,36 +207,12 @@ export const swiper = () => {
           breakpoints: {
 
             767.98: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
             },
             991.98: {
-                slidesPerView: 3,
+                slidesPerView: 4,
             },
         }
-
-    }
-
-    );
-
-    const reviews_video = new Swiper('.slider-reviews_video', {
-        slidesPerView: 1,
-        spaceBetween: 150,
-        centeredSlides: true,
-        loop:true,
-        
-        modules: [Navigation, Pagination],
-       
-        navigation: {
-            nextEl: '.slider-reviews_video-button-next',
-            prevEl: '.slider-reviews_video-button-prev',
-        },
-        pagination: {
-            el: '.slider-reviews_video-pagination',
-            clickable: true,
-            bulletActiveClass: 'pagination-bullet-active',
-            bulletClass: 'pagination-bullet',
-          },
-
 
     })
 

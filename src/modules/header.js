@@ -69,12 +69,12 @@ export const header = () => {
         }
 
         if(e.target.closest('.contacts-header__application')){
-            document.querySelector('.modal').classList.add('active')
+            document.querySelector('#contact-form').classList.add('active')
             closeMenu(contactsHeaderButton, contactsHeaderList)
         }
 
-        if(e.target.closest('.modal') && !e.target.closest('.modal__body')){
-            document.querySelector('.modal').classList.remove('active')
+        if(e.target.closest('#contact-form') && !e.target.closest('.modal__body')){
+            document.querySelector('#contact-form').classList.remove('active')
         }
 
     })

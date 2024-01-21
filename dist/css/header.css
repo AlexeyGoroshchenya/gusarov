@@ -159,7 +159,17 @@
     .courses-header__list {
         position: relative;
         top: 0;
-        padding: 0;
+        padding: 15px 0 0 0;
+    }
+}
+
+.courses-header__link:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+@media (max-width: 991.98px) {
+    .courses-header__link:not(:last-child) {
+        padding-bottom: 30px;
     }
 }
 
@@ -214,7 +224,17 @@
     .about-header__list {
         position: relative;
         top: 0;
-        padding: 0;
+        padding: 15px 0 0 0;
+    }
+}
+
+.about-header__link:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+@media (max-width: 991.98px) {
+    .about-header__link:not(:last-child) {
+        padding-bottom: 30px;
     }
 }
 
