@@ -1074,9 +1074,22 @@ left: 60%;
     right: -35px;
 }
 
+@media (max-width: 480px) {
+    .teachers__image::after {
+        top: 80%;
+        right: 0;
+    }
+}
+
 .teachers__textbox {
     flex: 1 1 auto;
     padding: 60px;
+}
+
+@media (max-width: 480px) {
+    .teachers__textbox {
+        padding: 40px 0 0 0;
+    } 
 }
 
 .teachers__disignation {}
@@ -1218,8 +1231,8 @@ left: 60%;
 }
 
 .experts__container {
-    padding-top: 20px;
 
+padding-bottom: 35px;
 }
 
 .experts__title {
@@ -1334,4 +1347,8 @@ left: 60%;
 }
 
 
+/* ---------------- */
 
+.works-students__container{
+    padding-bottom: 35px;
+}
