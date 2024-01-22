@@ -343,9 +343,7 @@
 
 
 .after {
-    overflow: hidden;
-    background-color: var(--white);
-    color: black;
+
     position: relative;
     background-image: url('../img/after-photo.png');
     background-repeat: no-repeat;
@@ -411,9 +409,16 @@
 
     font-weight: 500;
     color: var(--purple);
-    font-size: calc(24px + (30 - 24)*((100vw - 320px)/(1920 - 320)));
-    line-height: calc(31.2px + (46.8 - 31.2)*((100vw - 320px)/(1920 - 320)));
+    font-size: 1.875rem;
+    line-height: 2.925rem;
     padding-bottom: 10px;
+}
+
+@media (max-width: 767.98px) {
+    .after__disignation {
+    font-size: 1.5rem;
+    line-height: 1.95rem;
+    }
 }
 
 .after__text {}
@@ -561,7 +566,7 @@
     height: 350px;
     width: 350px;
     position: relative;
-    background: url(../img/animation_bg.svg);
+    background: url(../img/animation_bg_blue.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -728,7 +733,7 @@ left: 60%;
     display: flex;
     gap: 10px;
     overflow-x: auto;
-    
+    padding: 3px;
 }
 
 

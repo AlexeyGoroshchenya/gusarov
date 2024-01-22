@@ -242,6 +242,7 @@ z-index: 3;
     padding: 30px;
     border-radius: 12px;
     background-color: var(--blue);
+    color: var(--white);
     width: 300px;
     margin: 50px auto 0 auto;
     background-image: url('../img/icons/telegram-white.svg');
@@ -259,6 +260,7 @@ z-index: 3;
 }
 
 .reviews__more.frame::after {
+    color: var(--grey);
     transform: rotate(-2deg);
 }
 
@@ -266,6 +268,7 @@ z-index: 3;
     padding-bottom: 1.875rem;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .reviews__more__button {

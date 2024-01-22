@@ -324,7 +324,7 @@ a.cases__button {
     display: flex;
     gap: 10px;
     overflow-x: auto;
-    
+    padding: 3px;
 }
 
 
