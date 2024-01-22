@@ -769,7 +769,6 @@ section .swiper .slider-pagination {
   }
 }
 
-.form__confirm {}
 
 .form__confirm input {
   width: 20px;
@@ -894,9 +893,7 @@ section .swiper .slider-pagination {
   -o-border-radius: var(--radius);
 }
 
-.frame {}
 
-.timer-box {}
 
 .timer-box span {
   position: relative;
@@ -933,5 +930,300 @@ section .swiper .slider-pagination {
   content: 'секунд';
 }
 
-.timer__subtitle {}
 
+
+/* ------------------------ */
+
+
+
+.faq__subtitle {
+    
+    padding-bottom: 1.25rem;
+}
+
+@media (max-width: 767.98px) {
+    .faq__title {
+        padding-bottom: 1rem;
+    }
+}
+
+.faq__title {
+    padding-bottom: 2.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .faq__title {
+        padding-bottom: 1.875rem;
+    }
+}
+
+.faq__cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .faq__cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.card-faq {
+    flex: 0 0 48%;
+    padding: 30px;
+    border-radius: var(--radius);
+    transition-duration: var(--hover-duration);
+    -webkit-transition-duration: var(--hover-duration);
+    -moz-transition-duration: var(--hover-duration);
+    -o-transition-duration: var(--hover-duration);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+}
+
+.card-faq.frame::after {
+    transform: rotate(-2deg);
+    transition-duration: var(--hover-duration);
+    -webkit-transition-duration: var(--hover-duration);
+    -moz-transition-duration: var(--hover-duration);
+    -o-transition-duration: var(--hover-duration);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+}
+
+.card-faq.active.frame::after {
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+}
+
+.card-faq.active {
+    background-color: var(--green);
+}
+
+.card-faq__name {
+    padding-left: 90px;
+}
+
+.card-faq__name::before {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 35px;
+    left: 30px;
+    z-index: 3;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card-faq:nth-child(1) .card-faq__name::before {
+    background-image: url(../img/ways-photo.jpg);
+}
+
+.card-faq:nth-child(2) .card-faq__name::before {
+    background-image: url(../img/abramovish-photo.jpg);
+}
+
+
+.card-faq__text {
+    padding-left: 90px;
+}
+
+
+.accordion-faq__item {
+    padding: 20px 25px 0 25px;
+}
+
+.faq__accordion{
+    border-top: 1px solid #999999;
+}
+
+.faq__accordion .accordion-faq__item{
+
+    border-bottom: 1px solid #999999;
+}
+
+
+.accordion-faq__title {
+    font-weight: 700;
+    padding: 0 25px;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.accordion-faq__title::before,
+.accordion-faq__title::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.accordion-faq__title::before {
+    left: 0;
+    background: url('../img/snowflake-green.svg') 0 0 /100% no-repeat;
+}
+
+.accordion-faq__title::after {
+    right: 0;
+    background: url('../img/icons/arrow.svg') 0 0 /100% no-repeat;
+    transition-duration: var(--hover-duration);
+    -webkit-transition-duration: var(--hover-duration);
+    -moz-transition-duration: var(--hover-duration);
+    -o-transition-duration: var(--hover-duration);
+}
+
+.active .accordion-faq__title::after {
+    right: 0;
+    transform: rotate(180deg);
+    background: url('../img/icons/arrow.svg') 0 0 /100% no-repeat;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.accordion-faq__content {
+    padding-top: 20px;
+
+}
+
+.accordion-faq__content p:not(:last-child){
+    padding-bottom: 10px;
+}
+
+.active .accordion-faq__content{
+    padding-bottom: 20px;
+}
+
+/* ------------------------------------------ */
+
+
+.start-now__subtitle {
+    padding-bottom: 1.25rem;
+    
+}
+
+@media (max-width: 767.98px) {
+    .start-now__subtitle {
+        padding-bottom: 1rem;
+    }
+}
+
+.start-now__title {
+    color: black;
+    padding-bottom: 1.25rem;
+}
+
+.start-now__body {
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+    .start-now__body {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+.start-now__text {
+    padding-bottom: 3.125rem;
+}
+
+@media (max-width: 767.98px) {
+    .start-now__text {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.start-now__disignation {
+    padding-bottom: 1.25rem;
+}
+
+.start-now__card {
+    padding: 40px 35px;
+}
+
+.start-now__card p {
+    padding: 0 0 15px 30px;
+    position: relative;
+}
+
+.start-now__card p::before {
+    content: '';
+    background: url('../img/snowflake-purple.svg') 0 0 /100% no-repeat;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 0;
+    top: 0;
+
+}
+
+.start-now__card.frame::after {
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+}
+
+.start-now__imagebox {
+    flex: 0 0 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-now__image {
+    height: 350px;
+    width: 350px;
+
+    position: relative;
+    background: url(../img/animation_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.start-now__image img {
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+@media (min-width: 767.98px) {
+    .start-now__form .form__inputs {
+        flex-direction: row;
+        gap: 20px;
+    }
+}

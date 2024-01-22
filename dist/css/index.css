@@ -459,12 +459,7 @@ a.cases__button {
 
 /* ************************* */
 
-.confidence {
 
-}
-.confidence__container {
-    
-}
 .confidence__title {
     padding-bottom: 1.25rem;
 }
@@ -508,12 +503,6 @@ z-index: 3;
     left: -3px;
 }
 
-
-.slider-confidence {
-}
-
-.slider-confidence__wrapper {
-}
 
 .slider-confidence__slide {
     padding: 30px;

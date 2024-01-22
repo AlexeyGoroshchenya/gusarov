@@ -264,7 +264,6 @@ left: 35px;
     -o-border-radius: 15px;
 }
 
-.accordion-card {}
 
 .accordion-card__title {
     font-weight: 700;
@@ -333,8 +332,6 @@ left: 35px;
 }
 
 
-
-.accordion-card__termins {}
 
 .accordion-card__gradebox {
     display: flex;

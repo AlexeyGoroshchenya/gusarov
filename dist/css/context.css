@@ -167,7 +167,6 @@
     color: white;
 }
 
-.aim__container {}
 
 .aim__title {
     padding-bottom: 2.5rem;
@@ -261,8 +260,6 @@
 }
 
 
-
-.aim__text {}
 
 /* ***************************************** */
 
@@ -395,8 +392,6 @@
 }
 
 
-.after__container {}
-
 .after__title {
     padding-bottom: 2.5rem;
 }
@@ -434,12 +429,9 @@
     }
 }
 
-.after__text {}
-
 /* -------------------------- */
 
 
-.test {}
 
 .test__container {
     display: flex;
@@ -454,7 +446,6 @@
     }
 }
 
-.test__titlebox {}
 
 .test__subtitle {
     padding-bottom: 1.25rem;
@@ -471,9 +462,6 @@
     padding-bottom: 1.25rem;
 }
 
-.test__text {}
-
-.test__card {}
 
 .card-test {
     padding: 30px;
@@ -537,7 +525,7 @@
 }
 
 /* *************************************************** */
-.partner {}
+
 
 .partner__container {
     display: flex;
@@ -587,8 +575,6 @@
     -o-transform: rotate(-2deg);
 }
 
-.partner__textbox {}
-
 .partner__title {
     padding-bottom: 1.25rem;
 }
@@ -598,8 +584,6 @@
         padding-bottom: 0.625rem;
     }
 }
-
-.partner__text {}
 
 .partner__text p {
     padding-bottom: 5px;
@@ -817,8 +801,6 @@
     } 
 }
 
-.results-cases_selection__image {
-}
 .results-cases_selection__text {
     color: var(--white);
 }
@@ -904,8 +886,7 @@
 }
 }
 
-.client-search__text {
-}
+
 .client-search__imagebox {
     flex: 0 0 50%;
     display: flex;
@@ -967,9 +948,6 @@
 }
 
 /* **************************** */
-.teachers {}
-
-.teachers__container {}
 
 .teachers__subtitle {
     color: var(--purple);
@@ -1092,14 +1070,11 @@ left: 60%;
     } 
 }
 
-.teachers__disignation {}
-
 .teachers__disignation-subtitle{
     padding-bottom: 5px;
     color: var(--purple);
 }
 
-.teachers__text {}
 
 /* ----------------------------------------------------------- */
 .ratings {
@@ -1107,8 +1082,7 @@ left: 60%;
     color: var(--white);
 }
 
-.ratings__container {
-}
+
 .ratings__subtitle {
     color: var(--green);
     padding-bottom: 1.25rem;
@@ -1265,9 +1239,7 @@ padding-bottom: 35px;
     }
 }
 
-.slider-experts__wrapper {}
 
-.swiper-wrapper {}
 
 .slider-experts__slide {
     padding: 30px;

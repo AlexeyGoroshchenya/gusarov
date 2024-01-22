@@ -166,8 +166,6 @@
     color: white;
 }
 
-.international__container {}
-
 .international__title {
     padding-bottom: 2.5rem;
 }
@@ -250,7 +248,6 @@
     }
 }
 
-.international__text {}
 
 /* ***************************************** */
 
@@ -265,7 +262,6 @@
     padding-bottom: 1.25rem;
 }
 
-.students__title {}
 
 @media (max-width: 767.98px) {
     .students__subtitle {
@@ -373,8 +369,6 @@
 }
 
 
-.after__container {}
-
 .after__title {
     padding-bottom: 2.5rem;
 }
@@ -429,7 +423,7 @@
     }
 }
 
-.after__text {}
+
 
 /* -------------------------- */
 
@@ -526,9 +520,7 @@
 
 
 /* **************************************** */
-.teachers {}
 
-.teachers__container {}
 
 .teachers__subtitle {
     color: var(--purple);
@@ -546,7 +538,6 @@
     color: #575658;
 }
 
-.teachers__wrapper {}
 
 .teachers__slide {
     display: flex;
@@ -637,18 +628,12 @@ left: 60%;
     padding: 60px;
 }
 
-.teachers__disignation {}
+
 
 .teachers__disignation-subtitle{
     padding-bottom: 5px;
     color: var(--purple);
 }
-
-.teachers__text {}
-
-
-
-
 
 
 /* ------------------------ */
@@ -845,19 +830,7 @@ left: 60%;
     } 
 }
 
-.results-cases_selection__image {
-}
-.results-cases_selection__text {
-}
-.cases_selection__imagebox {
-    
-}
 
-
-.cases__slider {
-}
-.slider-cases {
-}
 .slider-cases__title {
     padding-bottom: 1.25rem;
 }
@@ -874,11 +847,6 @@ left: 60%;
     padding: 0 50px 50px 50px;
 }
 
-.slider-cases__wrapper {
-}
-
-.slider-cases__slide {
-}
 
 .slider-cases__slide img{
     max-width: 100%;
@@ -928,9 +896,6 @@ left: 60%;
     }
 }
 
-.slider-experts__wrapper {}
-
-.swiper-wrapper {}
 
 .slider-experts__slide {
     padding: 30px;
@@ -1038,8 +1003,7 @@ left: 60%;
 }
 
 
-.installment-prices {
-}
+
 .installment-prices.frame::after {
     color: var(--green);
     transform: rotate(-2deg);
@@ -1049,8 +1013,7 @@ left: 60%;
     padding-bottom: 10px;
 }
 
-.installment-prices__text {
-}
+
 
 .installment-prices__text p:not(:last-child) {
     padding-bottom: 10px;
@@ -1093,11 +1056,8 @@ left: 60%;
 .client-search__textbox {
     flex: auto;
 }
-.client-search__title {
-}
 
-.client-search__text {
-}
+
 .client-search__imagebox {
     flex: 0 0 50%;
     display: flex;
@@ -1184,9 +1144,6 @@ z-index: 3;
     right: -3px;
 }
 
-.works-students__slide{
-    
-}
 
 /* ----------------------------------------------------------- */
 .ratings {
@@ -1194,8 +1151,7 @@ z-index: 3;
     color: var(--white);
 }
 
-.ratings__container {
-}
+
 .ratings__subtitle {
     color: var(--green);
     padding-bottom: 1.25rem;
@@ -1231,9 +1187,7 @@ z-index: 3;
     }   
 }
 
-.ratings__card {
-    
-}
+
 .ratings__image {
     padding-bottom: 20px;
 }
