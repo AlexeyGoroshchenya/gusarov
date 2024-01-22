@@ -69,7 +69,7 @@
 }
 
 .cover__Image-background {
-    background-image: url('../img/cover-photo-smm.png');
+    background-image: url('../img/cover-photo-smm.webp');
 
 }
 
@@ -353,7 +353,7 @@
 .after {
 
     position: relative;
-    background-image: url('../img/after-photo.png');
+    background-image: url('../img/after-photo.webp');
     background-repeat: no-repeat;
     background-position: center 95%;
 
@@ -867,7 +867,7 @@ left: 60%;
 }
 
 .slider-cases__body {
-    background-image: url('../img/cases-bg.png');
+    background-image: url('../img/cases-bg.webp');
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
@@ -1268,6 +1268,13 @@ z-index: 3;
     background-color: var(--black);
     color: var(--white);
 }
+
+@media (max-width: 767.98px) {
+    .certificates__container{
+        padding-bottom: 35px;
+    }
+}
+
 
 .certificates__subtitle{
     color: var(--green);

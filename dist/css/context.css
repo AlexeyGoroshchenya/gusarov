@@ -69,7 +69,7 @@
 }
 
 .cover__Image-background {
-    background-image: url('../img/cover-photo-context.png');
+    background-image: url('../img/cover-photo-context.webp');
 
 }
 
@@ -369,7 +369,7 @@
 .after {
 
     position: relative;
-    background-image: url('../img/context-after.png');
+    background-image: url('../img/context-after.webp');
     background-repeat: no-repeat;
     background-position: 70% 95%;
 
