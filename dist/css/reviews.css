@@ -112,16 +112,24 @@ z-index: 3;
 
 .slider-reviews__slide {
     padding: 20px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: #FBFBFB;
     color: var(--grey);
     height: auto;
     position: relative;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 .section_black .slider-reviews__slide.frame::after {
     border: 1px solid var(--blue);
     transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 .slider-reviews_video__slide {
@@ -142,11 +150,19 @@ z-index: 3;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .slider-reviews_video__slide video {
-    border-radius: 12px;
+    border-radius: var(--radius);
     overflow: hidden;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 .slider-reviews_audio__item:not(:last-child){
@@ -182,7 +198,10 @@ z-index: 3;
     position: absolute;
     top: 20px;
     left: 20px;
-
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .slider-reviews__image img {
@@ -240,7 +259,7 @@ z-index: 3;
 
 .reviews__more {
     padding: 30px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: var(--blue);
     color: var(--white);
     width: 300px;
@@ -249,6 +268,10 @@ z-index: 3;
     background-position: 90% 165%;
     background-size: 40%;
     background-repeat: no-repeat;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 @media (max-width: 767.98px) {
@@ -262,6 +285,10 @@ z-index: 3;
 .reviews__more.frame::after {
     color: var(--grey);
     transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 .reviews__more-text {

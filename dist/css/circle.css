@@ -114,6 +114,10 @@
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .pie-fill,
 .c100.p51 .bar:after,
@@ -231,6 +235,10 @@
   float: left;
   margin: 0 0.1em 0.1em 0;
   background-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .c100 *,
 .c100 *:before,

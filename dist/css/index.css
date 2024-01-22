@@ -13,8 +13,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-    }
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
 }
 
 .cover__Image {
@@ -36,15 +39,18 @@
     position: absolute;
     bottom: 130px;
     right: 0;
-
     padding: 10px 20px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: var(--blue);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 2;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 @media (max-width: 991.98px) {
@@ -53,7 +59,11 @@
         bottom: 0;
         right: 50%;
         transform: translateX(50%);
-    }
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+}
 }
 
 .cover__label span {
@@ -69,6 +79,10 @@
 
 .cover__orbit img {
     transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
 }
 
 /* ********************************************************** */
@@ -108,6 +122,10 @@
     border-radius: 50%;
     top: 0;
     right: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 @media (max-width: 767.98px) {
@@ -217,7 +235,11 @@ a.cases__button {
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
-    }
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
 }
 
 
@@ -247,7 +269,11 @@ a.cases__button {
         bottom: 100px;
         left: 50%;
         transform: translateX(-50%);
-    }
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
 }
 
 @media (max-width: 480px) {

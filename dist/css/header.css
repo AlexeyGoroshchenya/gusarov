@@ -50,11 +50,19 @@
 
     .header__menu-button.active span:nth-child(1) {
         transform: rotate(45deg) translateY(12px);
-    }
+        -webkit-transform: rotate(45deg) translateY(12px);
+        -moz-transform: rotate(45deg) translateY(12px);
+        -ms-transform: rotate(45deg) translateY(12px);
+        -o-transform: rotate(45deg) translateY(12px);
+}
 
     .header__menu-button.active span:nth-child(3) {
         transform: rotate(-45deg) translateY(-12px);
-    }
+        -webkit-transform: rotate(-45deg) translateY(-12px);
+        -moz-transform: rotate(-45deg) translateY(-12px);
+        -ms-transform: rotate(-45deg) translateY(-12px);
+        -o-transform: rotate(-45deg) translateY(-12px);
+}
 
 }
 
@@ -103,7 +111,11 @@
         visibility: hidden;
         transform: translateY(-100px);
         height: 0;
-    }
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+}
 
     .header__menu {
         flex-direction: column;
@@ -153,6 +165,10 @@
     visibility: hidden;
     transform: translateY(-100vh);
     height: 0;
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
 }
 
 @media (max-width: 991.98px) {
@@ -218,6 +234,10 @@
     visibility: hidden;
     transform: translateY(-100vh);
     height: 0;
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
 }
 
 @media (max-width: 991.98px) {
@@ -312,7 +332,11 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100vh);
-    }
+        -webkit-transform: translateY(-100vh);
+        -moz-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+        -o-transform: translateY(-100vh);
+}
 }
 
 
@@ -343,6 +367,10 @@
 
 .contacts-header__telegram img {
     transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
 }
 
 .contacts-header__phone {}
@@ -351,8 +379,12 @@
     padding: 10px 30px;
     color: var(--purple);
     border: 2px solid;
-    border-radius: 12px;
+    border-radius: var(--radius);
     text-align: center;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 @media (max-width: 1400px) {

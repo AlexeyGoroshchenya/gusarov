@@ -6,10 +6,18 @@
 .cover__title span:first-child {
     color: black;
     padding: 0 20px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: var(--green);
     display: inline-block;
     transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 .cover__title span:last-child {
@@ -85,6 +93,10 @@
 
 .cover__orbit img {
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .cover__feature:first-child {
@@ -147,7 +159,6 @@
 
 }
 
-/* ------------------------------- */
 
 /* ------------------------------- */
 
@@ -238,12 +249,15 @@
 .aim__subtitle {
     text-align: center;
     padding: 20px 30px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: var(--purple);
     font-size: 28px;
     text-transform: uppercase;
     font-weight: 500;
-    
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 
@@ -314,6 +328,10 @@
     height: 75px;
     overflow: hidden;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 @media (max-width: 991.98px) {
@@ -464,6 +482,10 @@
 
 .card-test.frame::after {
     transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
 }
 
 .card-test__number {
@@ -544,17 +566,25 @@
 
 .partner__image img {
     position: absolute;
-    border-radius: 12px;
+    border-radius: var(--radius);
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
     z-index: 2;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 .partner__image.frame::after {
     transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 .partner__textbox {}
@@ -586,9 +616,7 @@
     border: 2px solid;
 }
 
-/* .services__text{
-    width: 50%;
-} */
+
 
 @media (min-width: 767.98px) {
     .services__text{
@@ -618,14 +646,26 @@
 .card-services_green.frame::after{
     color: var(--green);
     transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 .card-services_blue.frame::after{
     color: var(--blue);
     transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
 }
 .card-services_purple.frame::after{
     color: var(--purple);
     transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 /* ------------------- */
@@ -802,6 +842,10 @@
     top: 50%;
     transform: translateY(-50%);
     object-fit: contain;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 @media (max-width: 991.98px) {
@@ -809,7 +853,11 @@
         position: relative;
         top: auto;
         transform: translateY(0);
-    }
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
 }
 
 .comparison-prices__title {
@@ -996,6 +1044,10 @@ color: #A4FF5C;
     overflow: hidden;
     border-radius: 50%;
     object-fit: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 
@@ -1041,8 +1093,7 @@ left: 60%;
     background-color: var(--black);
     color: var(--white);
 }
-.section-border-black {
-}
+
 .ratings__container {
 }
 .ratings__subtitle {
@@ -1100,7 +1151,11 @@ left: 60%;
     padding: 20px;
     background-color: var(--white);
     color: var(--grey);
-    border-radius: 12px;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 @media (max-width: 991.98px) {
@@ -1112,16 +1167,28 @@ left: 60%;
 .ratings__card_green.frame::after{
     color: var(--green);
     transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
 }
 
 .ratings__card_blue.frame::after{
     color: var(--blue);
     transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 .ratings__card_purple.frame::after{
     color: var(--purple);
     transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
 }
 
 .ratings__row{
@@ -1191,10 +1258,14 @@ left: 60%;
 
 .slider-experts__slide {
     padding: 30px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: #FBFBFB;
     color: var(--grey);
     height: auto;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 
@@ -1202,6 +1273,10 @@ left: 60%;
     border: 1px solid var(--green);
     transform: rotate(-2deg);
     z-index: 6;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 .slider-experts__name {
@@ -1221,6 +1296,10 @@ left: 60%;
     top: 0;
     left: 0;
     background: url('../img/reviews-1.png') 0 0 /100% no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .slider-experts__job {

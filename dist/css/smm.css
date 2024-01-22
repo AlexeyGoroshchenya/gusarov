@@ -6,10 +6,18 @@
 .cover__title span:first-child {
     color: black;
     padding: 0 20px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: var(--green);
     display: inline-block;
     transform: rotate(-2deg);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 .cover__title span:last-child {
@@ -85,6 +93,10 @@
 
 .cover__orbit img {
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .cover__feature:first-child {
@@ -224,6 +236,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 @media (max-width: 767.98px) {
@@ -239,18 +255,6 @@
 /* ***************************************** */
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* ******************************************************** */
 
 .students {
     padding-top: 20px;
@@ -314,6 +318,10 @@
     height: 75px;
     overflow: hidden;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 @media (max-width: 991.98px) {
@@ -466,7 +474,10 @@
 
 .upcoming .timer.frame::after {
     transform: rotate(-2deg);
-
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 @media (max-width: 991.98px) {
@@ -487,9 +498,11 @@
 .upcoming .timer-box {
     flex: 0 0 320px;
     transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
-
-
 
 
 
@@ -502,7 +515,6 @@
     .upcoming .timer-box {
         width: 250px;
         flex: auto;
-
         text-align: center;
     }
 
@@ -590,6 +602,10 @@
     overflow: hidden;
     border-radius: 50%;
     object-fit: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 
@@ -629,14 +645,6 @@ left: 60%;
 }
 
 .teachers__text {}
-
-
-
-
-
-/* ********************************************* */
-
-
 
 
 
@@ -926,10 +934,14 @@ left: 60%;
 
 .slider-experts__slide {
     padding: 30px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: #FBFBFB;
     color: var(--grey);
     height: auto;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 
@@ -937,6 +949,10 @@ left: 60%;
     border: 1px solid var(--green);
     transform: rotate(-2deg);
     z-index: 6;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
 }
 
 .slider-experts__name {
@@ -956,6 +972,10 @@ left: 60%;
     top: 0;
     left: 0;
     background: url('../img/reviews-1.png') 0 0 /100% no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .slider-experts__job {
@@ -1000,11 +1020,15 @@ left: 60%;
 .prices__installment {
     margin-bottom: 70px;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: var(--white);
     color: var(--grey);
     width: 60%;
     margin-left: auto;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 @media (max-width: 767.98px) {
@@ -1169,8 +1193,7 @@ z-index: 3;
     background-color: var(--black);
     color: var(--white);
 }
-.section-border-black {
-}
+
 .ratings__container {
 }
 .ratings__subtitle {

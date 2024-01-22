@@ -41,8 +41,8 @@ width: 100%;
 }
 .contacts-footer__viber {
 }
-.contacts-footer__telegram img{
-transform: translateY(4px);
+.contacts-footer__telegram img{ transform: translateY(4px);
+     -webkit-transform: translateY(4px); -moz-transform: translateY(4px); -ms-transform: translateY(4px); -o-transform: translateY(4px);
 }
 .contacts-footer__phone {
 }

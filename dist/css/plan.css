@@ -167,7 +167,7 @@ left: 35px;
 
 .accordion-plan__title {
     padding: 10px 30px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     margin-bottom: 30px;
     cursor: pointer;
     border: 2px solid;
@@ -175,6 +175,10 @@ left: 35px;
     -webkit-transition-duration: var(--hover-duration);
     -moz-transition-duration: var(--hover-duration);
     -o-transition-duration: var(--hover-duration);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
 }
 
 .active .accordion-plan__title {
@@ -215,11 +219,19 @@ left: 35px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .active .accordion-plan__title p::after {
     transform: rotate(180deg) translateY(50%);
     background: url('../img/icons/arrow.svg') 0 0 /100% no-repeat;
+    -webkit-transform: rotate(180deg) translateY(50%);
+    -moz-transform: rotate(180deg) translateY(50%);
+    -ms-transform: rotate(180deg) translateY(50%);
+    -o-transform: rotate(180deg) translateY(50%);
 }
 
 
@@ -246,6 +258,10 @@ left: 35px;
     color: var(--grey);
     display: flex;
     flex-direction: column;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .accordion-card {}
