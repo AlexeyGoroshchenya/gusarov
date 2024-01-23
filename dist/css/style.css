@@ -269,7 +269,7 @@ section.section_black .title{
   }
 }
 
-.section-border-white::before,
+/* .section-border-white::before,
 .section-border-white::after {
   content: '';
   position: absolute;
@@ -298,7 +298,7 @@ section.section_black .title{
   height: 4px;
   background-color: var(--black);
   z-index: 3;
-}
+} */
 
 
 /* *************************************************************************************** */
@@ -716,7 +716,7 @@ section .swiper .slider-pagination {
   border: 1px solid #CCCCCC;
   margin-bottom: 30px;
   position: relative;
-  z-index: 5;
+  z-index: 6;
   -webkit-border-radius: var(--radius);
   -moz-border-radius: var(--radius);
   -ms-border-radius: var(--radius);
@@ -738,9 +738,18 @@ section .swiper .slider-pagination {
   -o-transform: translateY(-50%);
 }
 
-.form__phone {
+/* .form__phone ul{
+  background-color: var(--white);
+position: relative;
+z-index: 7;
+} */
+
+
+/* .form__phone {
   padding-left: 100px;
 }
+
+
 
 .form__phone::before {
   content: '';
@@ -755,7 +764,7 @@ section .swiper .slider-pagination {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-}
+} */
 
 .form__send {
   display: flex;
@@ -776,6 +785,7 @@ section .swiper .slider-pagination {
   margin-right: 20px;
   position: relative;
   z-index: 5;
+  cursor: pointer;
 }
 
 .form__confirm a {
@@ -982,6 +992,7 @@ section .swiper .slider-pagination {
     -moz-border-radius: var(--radius);
     -ms-border-radius: var(--radius);
     -o-border-radius: var(--radius);
+    cursor: pointer;
 }
 
 .card-faq.frame::after {

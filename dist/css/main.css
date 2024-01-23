@@ -713,6 +713,16 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    cursor: pointer;
+    transition-duration: var(--hover-duration);
+}
+
+.headliner__social:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 @media (max-width: 767.98px) {
@@ -1121,6 +1131,11 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.active.slider-students__image::before{
+    display:none;
 }
 
 .slider-students__name {
@@ -1142,6 +1157,7 @@
     position: relative;
     z-index: 4;
     border-bottom: 1px solid;
+    cursor: pointer;
 }
 
 .slider-students-pagination .pagination-bullet-active {
@@ -1880,6 +1896,12 @@ section .comparison-prices .comparison-prices__subtitle {
 
 .ways__disignation_image {
     position: relative;
+}
+
+@media (max-width: 400px) {
+    .ways__disignation_image {
+        padding-left: 50px;
+    }
 }
 
 .ways__disignation_image::before {

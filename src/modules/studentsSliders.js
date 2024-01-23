@@ -106,8 +106,17 @@ export const studentsSliders = () => {
         let studentReview = ''
         const studentReviewModal = document.querySelector('#students-review')   
 
-    document.addEventListener('click', (e) => {
+    document.addEventListener('click', function (e) {
 
+        if (e.target.closest('.slider-students__image')) {
+            e.target.closest('.slider-students__image').classList.toggle('active')
+            if(e.target.closest('.slider-students__image').classList.contains('active')){
+                e.target.closest('.slider-students__image').querySelector('video').play()
+            } else {
+                e.target.closest('.slider-students__image').querySelector('video').pause()
+            }
+            
+        }
 
         if (e.target.closest('.slider-students__link')) {
             

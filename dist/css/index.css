@@ -227,7 +227,9 @@ a.cases__button {
     background-position: 10px 50%;
     background-size: 30px 30px;
     background-repeat: no-repeat;
+    display: block;
 }
+
 
 @media (max-width: 991.98px) {
     .cases__button {

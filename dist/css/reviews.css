@@ -152,6 +152,11 @@ z-index: 3;
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.active.slider-reviews_video__slide::before {
+display: none;
 }
 
 .slider-reviews_video__slide video {
@@ -244,6 +249,7 @@ z-index: 3;
     width: fit-content;
     position: relative;
     z-index: 4;
+    cursor: pointer;
 }
 
 .slider-reviews-button-prev {

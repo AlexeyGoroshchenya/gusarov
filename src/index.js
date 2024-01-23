@@ -7,6 +7,7 @@ import { faq } from './modules/faq';
 import { swiper } from './modules/swiper';
 import { studentsSliders } from './modules/studentsSliders';
 import { timer } from './modules/timer';
+import { phoneInputs } from './modules/phoneInputs';
 
 //слушатели для менюшек хедера
 header()
@@ -26,8 +27,8 @@ studentsSliders()
 if(document.querySelector('.timer')){
     timer('01 may 2024', '.timer')
 }
-
-
+// плагин выбора страны для инпутов ввода телефонного номера. взят отсюда https://github.com/jackocnr/intl-tel-input
+phoneInputs()
 
 
 // пояснения по стилям:

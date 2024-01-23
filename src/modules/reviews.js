@@ -162,6 +162,15 @@ export const reviews = () => {
             e.target.closest('.slider-reviews__slide').classList.toggle('active')
         }
 
+        if(e.target.closest('.slider-reviews_video__slide')){
+            e.target.closest('.slider-reviews_video__slide').classList.toggle('active')
+            if(e.target.closest('.slider-reviews_video__slide').classList.contains('active')){
+                e.target.closest('.slider-reviews_video__slide').querySelector('video').play()
+            } else {
+                e.target.closest('.slider-reviews_video__slide').querySelector('video').pause()
+            }
+        }
+
 
 
     })
