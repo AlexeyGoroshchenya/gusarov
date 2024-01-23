@@ -77,6 +77,21 @@ export const header = () => {
             document.querySelector('#contact-form').classList.remove('active')
         }
 
+        if(contactsHeaderButton.classList.contains('active') && !e.target.closest('.header')){
+            closeMenu(contactsHeaderButton, contactsHeaderList)
+        }
+        if(aboutHeaderToogle.classList.contains('active') && !e.target.closest('.header')){
+            closeMenu(aboutHeaderToogle, aboutHeaderList)
+        }
+        if(coursesHeaderToogle.classList.contains('active') && !e.target.closest('.header')){
+            closeMenu(coursesHeaderToogle, coursesHeaderList)
+        }
+        if(headerMenuButton.classList.contains('active') && !e.target.closest('.header')){
+            closeMenu(headerMenuButton, headerNav)
+                closeMenu(aboutHeaderToogle, aboutHeaderList)
+                closeMenu(coursesHeaderToogle, coursesHeaderList)
+        }
+
     })
 
 
