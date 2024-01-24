@@ -10,6 +10,7 @@ export const header = () => {
     const headerMenuButton = document.querySelector('.header__menu-button')
     const headerNav = document.querySelector('.header__nav')
 
+
     const openMenu = (btn, menu) => {
         menu.classList.remove('hidden')
         btn.classList.add('active')
@@ -19,6 +20,9 @@ export const header = () => {
         menu.classList.add('hidden')
         btn.classList.remove('active')
     }
+    
+    document.querySelector('.main').style.paddingTop = header.clientHeight + 'px'
+
 
     document.addEventListener('click', (e) => {
         if (e.target.closest('.contacts-header__button')) {

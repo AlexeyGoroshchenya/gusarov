@@ -730,7 +730,7 @@
 .cases_selection__body {
     display: flex;
     
-    margin-bottom: 2.5rem;
+
 }
 
 @media (max-width: 991.98px) {
@@ -742,14 +742,21 @@
     }
   }
 
-.cases_selection__textbox {
+.cases_selection__text-content {
     padding-right: 20px;
 }
 
 @media (max-width: 991.98px) {
-    .cases_selection__textbox {
+    .cases_selection__text-content {
         padding: 0 0 30px 0;
     }   
+}
+
+.cases_selection__textbox{
+    display: none;
+}
+.cases_selection__textbox.active{
+    display: block;
 }
 
 .cases_selection__disignation {
@@ -816,14 +823,21 @@
 .cases_selection__imagebox {
     flex: 1 1 auto;
     height: auto;
-    
+    display: none;
     background-color: var(--white);
     position: relative;
+}
+
+
+.cases_selection__imagebox.active{
+    display: block;
+    overflow: hidden;
 }
 
 .cases_selection__imagebox img {
     position: absolute;
     width: 100%;
+    height: 100%;
     left: 0;
     top: 50%;
     transform: translateY(-50%);

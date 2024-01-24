@@ -5,6 +5,11 @@
     align-items: center;
     gap: 50px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background-color: var(--white);
 }
 
 @media (max-width: 1400px) {

@@ -255,6 +255,10 @@
 						</div>
 						<div class="card-how__feature">Где взять ресурсы для обучения и роста</div>
 						<div class="card-how__feature">Как ставить цели и проработать карьерный план/план развития</div>
+
+						<div class="card-how__feature hidden">Ещу какие-то фичи</div>
+						<div class="card-how__feature hidden">Ещу какие-то фичи</div>
+
 						<div class="card-how__link"><a href="#">Смотреть всё</a></div>
 						<div class="card-how__subtitle subtitle"></div>
 					</div>
@@ -266,6 +270,9 @@
 						<div class="card-how__feature">Создать цепляющие рекламные креативы</div>
 						<div class="card-how__feature">Создать оформление рилс, сторис, ленты
 						</div>
+						<div class="card-how__feature hidden">Ещу какие-то фичи</div>
+						<div class="card-how__feature hidden">Ещу какие-то фичи</div>
+
 						<div class="card-how__link"><a href="#">Смотреть всё</a></div>
 						<div class="card-how__subtitle subtitle"></div>
 					</div>
@@ -493,6 +500,30 @@
 						</div>
 					</div>
 					<div class="services__card card-services frame card-services_purple">
+						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/dalle.png"
+								alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">Dalle-E 2</div>
+							<div class="card-services__text">Нейросеть для генерации изображений</div>
+						</div>
+					</div>
+					<div class="services__card hidden card-services frame card-services_green">
+						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/chatGPT.png"
+								alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">ChatGPT</div>
+							<div class="card-services__text">Нейросеть для генерации текста</div>
+						</div>
+					</div>
+					<div class="services__card hidden card-services frame card-services_blue">
+						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/midjorney.png"
+								alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">Midjourney</div>
+							<div class="card-services__text">Нейросеть для генерации изображений</div>
+						</div>
+					</div>
+					<div class="services__card hidden card-services frame card-services_purple">
 						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/dalle.png"
 								alt="miro"></div>
 						<div class="card-services__textbox">
@@ -733,6 +764,8 @@
 										<p>Создаю аудитории с подсегментами и портретами клиентов</p>
 										<p>Создаю точки контакта, делаю их продающими, проверяю конверсию</p>
 										<p>Разработаю контент-стратегию для emaill рассылок, с учётом стратегии</p>
+										<p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
 									</div>
 									<div class="cards-students__link"><a href="#">Смотреть всё</a></div>
 								</div>
@@ -749,6 +782,8 @@
 										<p>Создаю аудитории с подсегментами и портретами клиентов</p>
 										<p>Создаю точки контакта, делаю их продающими, проверяю конверсию</p>
 										<p>Разработаю контент-стратегию для emaill рассылок, с учётом стратегии</p>
+										<p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
 									</div>
 									<div class="cards-students__link"><a href="#">Смотреть всё</a></div>
 								</div>
@@ -1065,15 +1100,14 @@
 				<h2 class="cases_selection__title title">Международные кейсы</h2>
 
 				<div class="cases_selection__buttons">
-					<div class="cases_selection__button button active">Кейс 1</div>
-					<div class="cases_selection__button button">Кейс 2</div>
-					<div class="cases_selection__button button">Кейс 3</div>
-					<div class="cases_selection__button button">Кейс 4</div>
-					<div class="cases_selection__button button">Кейс 5</div>
-					<div class="cases_selection__button button">Кейс 6</div>
+					<div data-ind="1" class="cases_selection__button button active">Кейс 1</div>
+					<div data-ind="2" class="cases_selection__button button">Кейс 2</div>
+					<div data-ind="3" class="cases_selection__button button">Кейс 3</div>
+					<div data-ind="4" class="cases_selection__button button">Кейс 4</div>
+
 				</div>
 				<div class="cases_selection__body">
-					<div class="cases_selection__textbox">
+					<div data-ind="1"  class="cases_selection__textbox  active">
 						<div class="cases_selection__disignation title_small">
 							<p>SEO-продвижение веб-сайта</p>
 
@@ -1087,10 +1121,62 @@
 
 
 					</div>
-					<div class="cases_selection__imagebox">
+					<div data-ind="1"  class="cases_selection__imagebox  active">
+						<img loading="lazy" src="./dist/img/cases-10.webp" alt="">
+					</div>
+					<div data-ind="2"  class="cases_selection__textbox">
+						<div class="cases_selection__disignation title_small">
+							<p>Другой кейс/p>
+
+						</div>
+						<div class="cases_selection__text">
+							<p>Тематика: <span>Грузовые перевозки</span></p>
+							<p>Регион: <span>США и Европа</span></p>
+							<p>Срок: <span>12 месяцев</span></p>
+							<p>Достигнутые результаты: <span>увеличение трафика с 46,5 тыс. до 72.3 тыс.</span></p>
+						</div>
+
+
+					</div>
+					<div data-ind="2" class="cases_selection__imagebox">
+						<img loading="lazy" src="./dist/img/cases-11.webp" alt="">
+					</div>
+					<div data-ind="3" class="cases_selection__textbox">
+						<div class="cases_selection__disignation title_small">
+							<p>SEO-продвижение веб-сайта</p>
+
+						</div>
+						<div class="cases_selection__text">
+							<p>Тематика: <span>Грузовые перевозки</span></p>
+							<p>Регион: <span>США и Европа</span></p>
+							<p>Срок: <span>12 месяцев</span></p>
+							<p>Достигнутые результаты: <span>увеличение трафика с 46,5 тыс. до 72.3 тыс.</span></p>
+						</div>
+
+
+					</div>
+					<div data-ind="3" class="cases_selection__imagebox">
+						<img loading="lazy" src="./dist/img/cases-10.webp" alt="">
+					</div>
+					<div data-ind="4" class="cases_selection__textbox">
+						<div class="cases_selection__disignation title_small">
+							<p>SEO-продвижение веб-сайта</p>
+
+						</div>
+						<div class="cases_selection__text">
+							<p>Тематика: <span>Грузовые перевозки</span></p>
+							<p>Регион: <span>США и Европа</span></p>
+							<p>Срок: <span>12 месяцев</span></p>
+							<p>Достигнутые результаты: <span>увеличение трафика с 46,5 тыс. до 72.3 тыс.</span></p>
+						</div>
+
+
+					</div>
+					<div data-ind="4" class="cases_selection__imagebox">
 						<img loading="lazy" src="./dist/img/cases-10.webp" alt="">
 					</div>
 				</div>
+
 
 			</div>
 		</section>

@@ -6,6 +6,7 @@
 
     <link type="image/x-icon" rel="shortcut icon" href="/static/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/header.css">
     <link rel="stylesheet" href="dist/css/main.css">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="dist/css/plan.css">
     <link rel="stylesheet" href="dist/css/reviews.css">
     <link rel="stylesheet" href="dist/css/context.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
     <script src="dist/js/main.js" defer></script>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -269,6 +271,8 @@
                                         <p>Веду социальные сети под ключ</p>
                                         <p>Готовлю и публикую контент</p>
                                         <p>Настраиваю и оптимизирую таргетинг</p>
+                                        <p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
                                     </div>
                                     <div class="cards-students__link"><a href="#">Смотреть всё</a></div>
                                 </div>
@@ -286,6 +290,8 @@
                                         <p>Публикую контент и создаю его в нескольких соцсетях</p>
                                         <p>Настраиваю и оптимизирую таргетинг</p>
                                         <p>Расписываю контент-план</p>
+                                        <p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
                                     </div>
                                     <div class="cards-students__link"><a href="#">Смотреть всё</a></div>
                                 </div>
@@ -303,6 +309,8 @@
                                         <p>Планирование и координация реализованных проектов</p>
                                         <p>Ведение социальных сетей бренда: Facebook, Instagram</p>
                                         <p>Разработка рекламных материалов и подготовка промо-кампаний</p>
+                                        <p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
                                     </div>
                                     <div class="cards-students__link"><a href="#">Смотреть всё</a></div>
                                 </div>
@@ -1915,6 +1923,27 @@
                             <div class="card-services__text">Анализ и обновление тегов в продуктах Google</div>
                         </div>
                     </div>
+                    <div class="services__card hidden card-services frame card-services_green">
+                        <div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/yandexdirect.png" alt=""></div>
+                        <div class="card-services__textbox">
+                            <div class="card-services__title title_small">Яндекс.Директ</div>
+                            <div class="card-services__text">Рекламные сообщения в русскоязычном сегменте</div>
+                        </div>
+                    </div>
+                    <div class="services__card hidden card-services frame card-services_blue">
+                        <div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/googleads.png" alt=""></div>
+                        <div class="card-services__textbox">
+                            <div class="card-services__title title_small">Google Ads</div>
+                            <div class="card-services__text">Рекламные сообщения для контекстной рекламы</div>
+                        </div>
+                    </div>
+                    <div class="services__card hidden card-services frame card-services_purple">
+                        <div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/googletag.png" alt=""></div>
+                        <div class="card-services__textbox">
+                            <div class="card-services__title title_small">Google Tag Assistant</div>
+                            <div class="card-services__text">Анализ и обновление тегов в продуктах Google</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="services__button button">
                     Показать больше
@@ -2150,14 +2179,14 @@
 
                 
                 <div class="cases_selection__body">
-                    <div class="cases_selection__textbox">
+                    <div class="cases_selection__text-content">
                         <div class="cases_selection__buttons">
-                            <div class="cases_selection__button button active">Кейс 1</div>
-                            <div class="cases_selection__button button">Кейс 2</div>
-                            <div class="cases_selection__button button">Кейс 3</div>
-                            
+                            <div data-ind="1" class="cases_selection__button  button active">Кейс 1</div>
+                            <div data-ind="2" class="cases_selection__button button">Кейс 2</div>
+                            <div data-ind="3" class="cases_selection__button button">Кейс 3</div>
                         </div>
-                        <div class="cases_selection__disignation title_small">
+                        <div data-ind="1" class="cases_selection__textbox active">
+                            <div class="cases_selection__disignation title_small">
                             <p>Продвижение сайта</p>
                             <p><span>Интернет-магазин мебели</span></p>
                         </div>
@@ -2189,13 +2218,88 @@
 							</div>
 							
 						</div>
-
-
+                        </div>
+                        <div data-ind="2" class="cases_selection__textbox">
+                            <div class="cases_selection__disignation title_small">
+                            <p>Продвижение сайта</p>
+                            <p><span>Интернет-магазин электроники'</span></p>
+                        </div>
+                        <div class="cases_selection__results results-cases">
+							<div class="results-cases_selection__title">Результат:</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p100 small green">
+										<span>743%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Рост количества ключевых конверсий</div>
+							</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p100 small green">
+										<span>536%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Рост визитов на сайт по рекламе</div>
+							</div>
+							
+						</div>
+                        </div>
+                        <div data-ind="3" class="cases_selection__textbox">
+                            <div class="cases_selection__disignation title_small">
+                            <p>Продвижение сайта</p>
+                            <p><span>Интернет-магазин мебели</span></p>
+                        </div>
+                        <div class="cases_selection__results results-cases">
+							<div class="results-cases_selection__title">Результат:</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p100 small green">
+										<span>743%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Рост количества ключевых конверсий</div>
+							</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p100 small green">
+										<span>536%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Рост визитов на сайт по рекламе</div>
+							</div>
+							
+						</div>
+                        </div>
+                        
                     </div>
-                    <div class="cases_selection__imagebox">
+                    <div data-ind="1"  class="cases_selection__imagebox active">
+                        <img loading="lazy" src="./dist/img/cases-11.webp" alt="">
+                    </div>
+                    <div data-ind="2"  class="cases_selection__imagebox">
+                        <img loading="lazy" src="./dist/img/cases-10.webp" alt="">
+                    </div>
+                    <div data-ind="3"  class="cases_selection__imagebox">
                         <img loading="lazy" src="./dist/img/cases-11.webp" alt="">
                     </div>
                 </div>
+
 
             </div>
         </section>

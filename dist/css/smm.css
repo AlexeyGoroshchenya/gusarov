@@ -767,8 +767,10 @@ left: 60%;
 .cases_selection__body {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2.5rem;
+
 }
+
+
 
 @media (max-width: 767.98px) {
     .cases_selection__body  {
@@ -781,7 +783,20 @@ left: 60%;
 
 .cases_selection__textbox {
     padding-right: 20px;
+    display: none;
 }
+.cases_selection__imagebox{
+    display: none;
+}
+.cases_selection__imagebox.active,
+.cases_selection__textbox.active {
+    display: block;
+}
+
+
+
+
+
 .cases_selection__disignation {
     margin-bottom: 2.5rem;
        color: var(--purple);

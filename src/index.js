@@ -8,11 +8,17 @@ import { swiper } from './modules/swiper';
 import { studentsSliders } from './modules/studentsSliders';
 import { timer } from './modules/timer';
 import { phoneInputs } from './modules/phoneInputs';
+import { showHiddenRows } from './modules/showHiddenRows';
+import { toggleCases } from './modules/toggleCases';
 
 //слушатели для менюшек хедера
 header()
 //слушатели аккордиона для блоков faq и учебный план
 accordion()
+//слушатели карточек дл блока про дизайнера и психолога
+showHiddenRows()
+//слушатели для переключения кейсов
+toggleCases()
 //слушатели и карусель блока тарифов. есть на всех страницах
 prices()
 //слушатели и карусели блока отзывов. на всех 3 страницах

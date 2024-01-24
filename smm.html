@@ -6,6 +6,7 @@
 
 	<link type="image/x-icon" rel="shortcut icon" href="/static/favicon.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 	<link rel="stylesheet" href="dist/css/style.css">
 	<link rel="stylesheet" href="dist/css/header.css">
 	<link rel="stylesheet" href="dist/css/main.css">
@@ -14,6 +15,7 @@
 	<link rel="stylesheet" href="dist/css/plan.css">
 	<link rel="stylesheet" href="dist/css/reviews.css">
 	<link rel="stylesheet" href="dist/css/smm.css">
+	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
 	<script src="dist/js/main.js" defer></script>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width">
@@ -268,6 +270,8 @@
 										<p>Веду социальные сети под ключ</p>
 										<p>Готовлю и публикую контент</p>
 										<p>Настраиваю и оптимизирую таргетинг</p>
+										<p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
 									</div>
 									<div class="cards-students__link"><a href="#">Смотреть всё</a></div>
 								</div>
@@ -285,6 +289,8 @@
 										<p>Публикую контент и создаю его в нескольких соцсетях</p>
 										<p>Настраиваю и оптимизирую таргетинг</p>
 										<p>Расписываю контент-план</p>
+										<p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
 									</div>
 									<div class="cards-students__link"><a href="#">Смотреть всё</a></div>
 								</div>
@@ -302,6 +308,8 @@
 										<p>Планирование и координация реализованных проектов</p>
 										<p>Ведение социальных сетей бренда: Facebook, Instagram</p>
 										<p>Разработка рекламных материалов и подготовка промо-кампаний</p>
+										<p class="hidden">Еще что-то умею</p>
+										<p class="hidden">Еще что-то умею</p>
 									</div>
 									<div class="cards-students__link"><a href="#">Смотреть всё</a></div>
 								</div>
@@ -1099,6 +1107,8 @@
 						<div class="card-how__feature">Разработает визитки и логотип</div>
 						<div class="card-how__feature">Создаст рекламные макеты под таргетированную/контекстную рекламы
 						</div>
+						<div class="card-how__feature hidden">Ещу какие-то фичи</div>
+						<div class="card-how__feature hidden">Ещу какие-то фичи</div>
 						<div class="card-how__link"><a href="#">Смотреть всё</a></div>
 						<div class="card-how__subtitle subtitle">Поможет справиться со всеми трудностями, которые
 							возникают у маркетологов на пути к увеличению конверсии</div>
@@ -1112,7 +1122,8 @@
 						</div>
 						<div class="card-how__feature">Поможет студентам глубже понять мотивацию, эмоции и поведение
 							потребителей</div>
-
+							<div class="card-how__feature hidden">Ещу какие-то фичи</div>
+							<div class="card-how__feature hidden">Ещу какие-то фичи</div>
 						<div class="card-how__link"><a href="#">Смотреть всё</a></div>
 						<div class="card-how__subtitle subtitle">Основанные на психологии методы могут быть использованы
 							для создания более убедительных рекламных сообщений и кампаний</div>
@@ -1261,6 +1272,28 @@
 						</div>
 					</div>
 					<div class="services__card card-services frame card-services_purple">
+						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/livedune.png" alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">LiveDune</div>
+							<div class="card-services__text">Cервис для комплексной работы с социальными сетями</div>
+						</div>
+					</div>
+					<div class="services__card hidden card-services frame card-services_green">
+						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/shikari.png" alt="miro"></div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">Shikari.io</div>
+							<div class="card-services__text">Поиск клиентов в социальных сетях, блогах, форумах</div>
+						</div>
+					</div>
+					<div class="services__card hidden card-services frame card-services_blue">
+						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/brandanalytics.png" alt="miro">
+						</div>
+						<div class="card-services__textbox">
+							<div class="card-services__title title_small">BrandAnalytics</div>
+							<div class="card-services__text">Мощная система мониторинга брендов</div>
+						</div>
+					</div>
+					<div class="services__card hidden card-services frame card-services_purple">
 						<div class="card-services__image"><img loading="lazy" src="./dist/img/logotips/livedune.png" alt="miro"></div>
 						<div class="card-services__textbox">
 							<div class="card-services__title title_small">LiveDune</div>
@@ -1497,12 +1530,12 @@
 				<h2 class="cases_selection__title title">Кейсы студентов на курсах</h2>
 
 				<div class="cases_selection__buttons">
-					<div class="cases_selection__button button active">Кейс 1</div>
-					<div class="cases_selection__button button">Кейс 2</div>
-					<div class="cases_selection__button button">Кейс 3</div>
+					<div data-ind="1" class="cases_selection__button button active">Кейс 1</div>
+					<div data-ind="2" class="cases_selection__button button">Кейс 2</div>
+					<div data-ind="3" class="cases_selection__button button">Кейс 3</div>
 				</div>
 				<div class="cases_selection__body">
-					<div class="cases_selection__textbox">
+					<div data-ind="1" class="cases_selection__textbox active">
 						<div class="cases_selection__disignation title_small">
 							<p>Упаковка аккаунта</p>
 							<p><span>Постельное бельё KENTATEX</span></p>
@@ -1555,10 +1588,123 @@
 						</div>
 
 					</div>
-					<div class="cases_selection__imagebox">
+					<div data-ind="1" class="cases_selection__imagebox active">
 						<img loading="lazy" src="./dist/img/cases-5.webp" alt="">
 					</div>
+					<div data-ind="2" class="cases_selection__textbox">
+						<div class="cases_selection__disignation title_small">
+							<p>Упаковка аккаунта</p>
+							<p><span>Постельное бельё KENTATEX</span></p>
+						</div>
+						<div class="cases_selection__text">
+							Запрос — упаковка аккаунта и ведение профиля для повышения вовлеченности аудитории. Без
+							таргета. По желанию клиента публикация контента в выходные дни не осуществлялась.
+						</div>
+						<div class="cases_selection__results results-cases">
+							<div class="results-cases_selection__title">Результат:</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p100 small green">
+										<span>100%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Число увеличения взаимодействий с контентом
+								</div>
+							</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p67 small green">
+										<span>66,6%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Увеличение количества охваченных аккаунтов
+								</div>
+							</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p41 small green">
+										<span>40,6%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Увеличение количества подписчиков аккаунта
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div data-ind="2" class="cases_selection__imagebox">
+						<img loading="lazy" src="./dist/img/cases-6.webp" alt="">
+					</div>
+					<div data-ind="3" class="cases_selection__textbox">
+						<div class="cases_selection__disignation title_small">
+							<p>Упаковка аккаунта</p>
+							<p><span>Постельное бельё KENTATEX</span></p>
+						</div>
+						<div class="cases_selection__text">
+							Запрос — упаковка аккаунта и ведение профиля для повышения вовлеченности аудитории. Без
+							таргета. По желанию клиента публикация контента в выходные дни не осуществлялась.
+						</div>
+						<div class="cases_selection__results results-cases">
+							<div class="results-cases_selection__title">Результат:</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p100 small green">
+										<span>100%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Число увеличения взаимодействий с контентом
+								</div>
+							</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p67 small green">
+										<span>66,6%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Увеличение количества охваченных аккаунтов
+								</div>
+							</div>
+							<div class="results-cases_selection__row">
+								<div class="results-cases_selection__image">
+									<div class="c100 p41 small green">
+										<span>40,6%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+								<div class="results-cases_selection__text">Увеличение количества подписчиков аккаунта
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div data-ind="3" class="cases_selection__imagebox">
+						<img loading="lazy" src="./dist/img/cases-8.webp" alt="">
+					</div>
 				</div>
+
 				<div class="cases_selection__show button button_purple"><a href="#">Смотреть кейс</a></div>
 			</div>
 		</section>
