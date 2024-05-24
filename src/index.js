@@ -10,6 +10,7 @@ import { timer } from './modules/timer';
 import { phoneInputs } from './modules/phoneInputs';
 import { showHiddenRows } from './modules/showHiddenRows';
 import { toggleCases } from './modules/toggleCases';
+import { usa } from './modules/usa';
 
 //слушатели для менюшек хедера
 header()
@@ -35,6 +36,9 @@ if(document.querySelector('.timer')){
 }
 // плагин выбора страны для инпутов ввода телефонного номера. взят отсюда https://github.com/jackocnr/intl-tel-input
 phoneInputs()
+
+//скрипты для страницы продвижение в США
+usa()
 
 
 // пояснения по стилям:
