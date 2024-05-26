@@ -37,8 +37,8 @@ const team = new Swiper('.team__slider', {
 );
 
 const usaCases = new Swiper('.cases-countries-cards.usa', {
-    slidesPerView: 1.1,
-    spaceBetween: 50,
+    slidesPerView: 1.2,
+    spaceBetween: 40,
     loop: true,
     modules: [Navigation, Pagination],
 
@@ -56,6 +56,7 @@ const usaCases = new Swiper('.cases-countries-cards.usa', {
 
         767.98: {
             slidesPerView: 1.6,
+            spaceBetween: 50,
         },
         991.98: {
             slidesPerView: 2,
@@ -89,6 +90,9 @@ const massMedia = new Swiper('.massmedia__slider', {
 }
 );
 
+
+
+
 document.addEventListener('click', (e) => {
 
     if (e.target.closest('.peculiarities__button')) {
@@ -103,6 +107,34 @@ document.addEventListener('click', (e) => {
         }
 
     }
+
+    if (e.target.closest('.stages__stage')) {
+        let currentStage = document.querySelector('.stages__slide-number').textContent
+        let stageNumber = e.target.closest('.stages__stage').dataset.stage
+
+        if(currentStage === stageNumber) return
+
+        document.querySelector('.stages__stage.active').classList.remove('active')
+        e.target.closest('.stages__stage').classList.add('active')
+
+        document.querySelector('.stages__slide-number').textContent = stageNumber
+
+
+        document.querySelectorAll('.stages .stages__textbox-content').forEach(el=>{
+            if(el.dataset.stage !== stageNumber){
+                el.classList.add('hidden')
+            } else {
+                el.classList.remove('hidden')
+            }
+        })
+
+
+
+
+
+
+    }
+    
 
 })
 
